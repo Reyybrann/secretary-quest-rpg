@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#162348"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Secretary Quest RPG — Legenda Koin</title>
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<div id="game-shell">
+  <canvas id="world" width="960" height="540" aria-label="Dunia petualangan RPG"></canvas>
+  <div id="hud" class="hidden">
+    <div id="hud-hero"><div class="portrait-sm" id="hud-avatar">⚔️</div><div class="hero-info"><div class="hero-title"><span id="h-name">Petualang</span><span id="h-level">Lv.1</span></div><div class="bar hp"><i id="hpbar"></i><b id="hptext">100/100</b></div><div class="bar xp"><i id="xpbar"></i><b id="xptext">0/100 XP</b></div></div></div>
+    <div id="hud-right"><div class="money-chip">🪙 <span id="coins">0</span></div><button class="hudbutton" data-act="shop" title="Toko Pedang">⚔️ <span>Toko</span></button><button class="hudbutton" data-act="quests" title="Quest">📜 <span>Quest</span></button><button class="hudbutton" data-act="pause" title="Pengaturan">⚙️</button></div>
+    <div id="zone-tag">🏡 Desa Akuntansi</div><div id="objective">📜 Temukan monster dan jawab tantangannya!</div>
+  </div>
+  <div id="touch-controls" class="hidden"><div id="joy-pad" role="application" aria-label="Analog untuk bergerak"><div id="joy-knob"></div></div><div id="touch-right"><button id="touch-interact" class="action-circle small" aria-label="Interaksi">💬</button><button id="touch-attack" class="action-circle" aria-label="Serang">⚔️<small>SERANG</small></button></div></div>
+  <div id="pc-help" class="hidden">W A S D · jalan &nbsp; | &nbsp; E · interaksi &nbsp; | &nbsp; SPASI · serang</div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="modal" class="hidden" role="dialog" aria-modal="true"></div>
+  <div id="title-screen" class="screen"><div class="home-shade"></div><div class="home-content"><div class="mini-title">✨ FANTASY ACCOUNTING ADVENTURE ✨</div><h1>SECRETARY QUEST <em>RPG</em></h1><p>LEGENDA KOIN • PETUALANGAN AKUNTANSI</p><div class="home-menu"><button id="btn-start" class="gold-btn">⚔️ Mulai Petualangan</button><button id="btn-continue" class="dark-btn">▶ Lanjutkan Game</button><button id="btn-guide" class="dark-btn">📖 Cara Bermain</button></div><div class="home-footer">💻 WASD di laptop &nbsp;·&nbsp; 📱 Analog di HP &nbsp;·&nbsp; 💾 Autosave</div></div><img class="home-narrator" src="assets/narator_rambut.webp" alt="Avatar narator petualangan"></div>
+  <div id="rotate-tip" class="hidden"><span>📱</span> Mengoptimalkan tampilan landscape…</div>
+</div>
+<script src="src/questions.js"></script><script src="src/art.js"></script><script src="src/game.js"></script>
+</body>
+</html>
