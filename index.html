@@ -1,4 +1,4 @@
-<!doctype html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no"><meta name="theme-color" content="#101d3f"><meta name="sq-build" content="SECRETARY_QUEST_3D_V3_CON_FIX_20261021"><title>Secretary Quest RPG 3D V3 — Legenda Koin</title><style>
+<!doctype html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no"><meta name="theme-color" content="#101d3f"><meta name="sq-build" content="SECRETARY_QUEST_3D_V5_PREMIUM_20261021"><title>Secretary Quest RPG 3D V5 — Legenda Koin</title><style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
 :root{--navy:#101b3e;--mid:#26345d;--gold:#ffd46c;--cream:#fff0d7;--ink:#2a2547;--frame:#e2b66e;--blue:#447fd4}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;touch-action:none;background:#0e203f;color:#fff;font-family:'Nunito',system-ui,Arial,sans-serif}button,input{font:inherit}button{cursor:pointer;color:inherit;touch-action:manipulation;user-select:none;-webkit-tap-highlight-color:transparent}button:disabled{opacity:.42;cursor:default}#game,#render-canvas{width:100%;height:100%;position:absolute;inset:0;overflow:hidden}#render-canvas{display:block;touch-action:none}#vignette{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 130px rgba(7,24,56,.26)}#flash{position:absolute;inset:0;background:#fff;z-index:29;opacity:0;pointer-events:none;transition:opacity .24s}.hidden{display:none!important}.screen{position:absolute;inset:0;z-index:30}.btn-gold,.btn-outline{border-radius:13px;padding:12px 18px;font-weight:900;letter-spacing:.02em;box-shadow:0 5px 0 #543c55,0 8px 17px #0005;text-shadow:0 1px 0 #fff3;transition:transform .12s,filter .12s}.btn-gold{border:2px solid #fff3af;background:linear-gradient(180deg,#fff39a,#ffc34a 55%,#ec942c);color:#513023}.btn-outline{border:2px solid #d7b98a;background:linear-gradient(180deg,#3a4677,#202d57);color:#fff}button:hover{filter:brightness(1.12)}button:active{transform:translateY(3px);box-shadow:0 2px 0 #55425f}.hud{pointer-events:none;position:absolute;inset:15px 16px auto;z-index:12;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.hud>*{pointer-events:auto}.hud-card,.hud-region,.hud-actions button,.hud-actions .coins,.quest-strip,.nearby{border:2px solid #cbaa6d;background:linear-gradient(180deg,#2a395f,#17284b);box-shadow:0 3px 0 #463248,0 7px 15px #0005;border-radius:14px}.hud-card{display:flex;padding:8px 11px;align-items:center;min-width:220px;gap:10px}.hud-hero{width:40px;height:52px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(145deg,#8176d1,#252d71);font-size:26px}.identity-detail{flex:1}.identity-detail>div:first-child{display:flex;justify-content:space-between;align-items:center;font-size:13px}.identity-detail small{font-size:11px;color:#e3e0ff}.bar{height:13px;background:#0f1934;border:1px solid #080f23;border-radius:9px;overflow:hidden;margin-top:4px;position:relative}.bar i{display:block;height:100%;background:linear-gradient(90deg,#ff5781,#f3987e);transition:width .3s}.bar.xp i{background:linear-gradient(90deg,#30aefa,#82edfc)}.bar em{position:absolute;left:0;right:0;top:-1px;font-style:normal;text-align:center;font-size:10px;line-height:13px;text-shadow:0 1px 2px #000,0 1px 3px #000}.hud-region{padding:8px 15px;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:14px;font-weight:900}.hud-region small{font-size:11px;color:#dfceaf}.hud-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.hud-actions button,.hud-actions .coins{font-weight:900;padding:10px 11px;font-size:13px;color:white}.hud-actions button{background:linear-gradient(#5f488a,#242d56)}.hud-actions .coins{color:#fff2ab;min-width:75px;text-align:center}.quest-strip{position:absolute;bottom:29px;left:50%;transform:translateX(-50%);padding:9px 17px;z-index:13;min-width:310px;max-width:70vw;text-align:center;font-size:12px;display:flex;gap:10px;align-items:center;justify-content:center}.quest-strip b{color:#ffe4a3}.hp-segments{display:flex;gap:3px}.hp-segments i{height:9px;width:19px;border:1px solid #ffd69e;border-radius:4px;background:#72da85}.hp-segments i.empty{background:#394158}.nearby{position:absolute;top:21%;left:50%;transform:translateX(-50%);z-index:13;padding:8px 14px;font-weight:900;font-size:13px;text-align:center}.keyhint{position:absolute;left:16px;bottom:12px;font-size:11px;text-shadow:1px 2px #000;z-index:11}.screen.lobby{overflow:hidden;background:linear-gradient(90deg,#101b3ee8,#101b3e8a 50%,#101b3e15 100%)}.lobby-shade{position:absolute;inset:0;background:radial-gradient(circle at 65% 35%,transparent,#10132933 75%);pointer-events:none}.lobby-content{position:absolute;top:50%;left:6%;transform:translateY(-50%);z-index:2;width:min(48%,650px);text-align:center;filter:drop-shadow(0 9px 14px #07122bb5)}.kicker{color:#fff0c9;font-size:clamp(10px,1.13vw,15px);letter-spacing:.26em;font-weight:900}.logo-top,.logo-bottom{font-size:clamp(32px,5vw,76px);font-weight:1000;line-height:1.09;color:#ffe8a3;-webkit-text-stroke:1.2px #995734;text-shadow:0 4px 0 #603154,0 8px 8px #101424}.logo-bottom{font-size:clamp(35px,5.5vw,84px)}.logo-bottom span{color:#80e3f5;-webkit-text-stroke:1.5px #3952a7}.tagline{font-weight:900;font-size:clamp(10px,1.2vw,16px);letter-spacing:.07em;color:#fff0d7;margin:8px 0 18px}.lobby-buttons{display:flex;flex-direction:column;gap:10px;width:min(390px,85%);margin:auto}.lobby-buttons button{font-size:clamp(12px,1.2vw,16px);padding:11px 15px}.lobby-caption{font-size:clamp(9px,.9vw,12px);margin-top:18px;color:#e8def9}.narrator-lobby{position:absolute;right:3%;bottom:-15%;height:125%;width:42%;max-width:660px;z-index:1;pointer-events:none;animation:narrator-bob 6s ease-in-out infinite}.narrator-lobby img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;mask-image:linear-gradient(to bottom,#000 0%,#000 80%,transparent 98%);border-radius:48% 48% 0 0;filter:drop-shadow(-9px 0 34px #b0ceff5c)}.narrator-tag{position:absolute;bottom:20%;right:2%;background:#1e2e5deb;border:2px solid #f0d18f;border-radius:10px;color:#ffe5a3;font-size:12px;font-weight:900;padding:7px 11px}.narrator-stars{position:absolute;right:0;top:24%;font-size:33px;color:#ffe0a5;animation:star 4s infinite}.narrator-lobby.narrator-static,.portrait-live.narrator-static{animation:none!important}@keyframes narrator-bob{0%,100%{transform:translateY(0) rotate(-.4deg)}50%{transform:translateY(-9px) rotate(.35deg)}}@keyframes star{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:1;transform:scale(1.2)}}
 #creator{display:grid;place-items:center;background:linear-gradient(105deg,#0e1b35d9,#17284ad0)}.panel{background:linear-gradient(145deg,#fef4dc,#ffe5b8);border:4px solid #754d49;outline:2px solid #f5d487;border-radius:19px;color:#2d2948;box-shadow:0 13px 34px #0009}.creator-panel{width:min(1100px,95vw);height:min(690px,91vh);padding:18px 22px;display:flex;flex-direction:column}.panel-heading{display:flex;align-items:center;gap:15px;margin-bottom:12px}.panel-heading h2{font-size:clamp(22px,2.2vw,32px);margin:0;color:#252853}.panel-heading small{font-size:11px;color:#b07e4c;font-weight:900;letter-spacing:.1em}.back-small,.close-x{background:#303b69;color:white;border:2px solid #c89c59;border-radius:11px;font-weight:900;padding:6px 13px;font-size:20px}.creator-layout{min-height:0;flex:1;display:grid;grid-template-columns:50% 50%;gap:15px}.creator-preview{border-radius:15px;background:radial-gradient(ellipse at center,#8fc2bd,#395687);color:#ffedb3;position:relative;text-align:center;overflow:hidden}.creator-preview p{position:relative;z-index:1;font-weight:900;letter-spacing:.15em}.rotate-controls{position:absolute;bottom:10px;left:10px;right:10px;display:flex;justify-content:center;gap:12px;align-items:center;font-size:12px;color:#fff;text-shadow:0 1px 3px #000}.rotate-controls button{font-size:20px;background:#21315cb7;border:1px solid #ffe3a0;border-radius:10px;padding:3px 10px}.creator-options{overflow:auto;touch-action:pan-y;padding:0 15px 4px 4px}.creator-options label{font-weight:900;display:block;font-size:12px}.creator-options input{display:block;touch-action:manipulation;width:100%;border:2px solid #a58eb0;padding:9px;border-radius:9px;color:#32375a;margin-top:4px;background:#fff}.field-title{font-weight:900;font-size:13px;margin:10px 0 5px}.segmented{display:flex;background:#e0d2c8;border-radius:11px;gap:5px;padding:4px}.segmented button{flex:1;border:0;border-radius:8px;background:transparent;color:#483b50;font-weight:900;padding:7px}.segmented button.active{background:#5268b1;color:#fff}.option-grid,.swatches{display:flex;gap:7px;flex-wrap:wrap}.option-grid button{border:2px solid #c5adc1;background:#f8efe4;border-radius:9px;color:#333b62;padding:7px 11px}.option-grid button.active{border-color:#4d72cd;background:#bfcdf4}.swatches button{width:33px;height:33px;border:3px solid #f3eddd;border-radius:50%;box-shadow:0 1px 5px #0006}.swatches button.active{outline:3px solid #4d6fe0}.creator-start{width:100%;margin:16px 0 2px}.dialog-screen{background:linear-gradient(90deg,#07132fcc,#182d4a77);display:flex;align-items:center;justify-content:center}.dialog-stage{width:min(1180px,96vw);height:min(570px,88vh);display:grid;grid-template-columns:40% 60%;gap:0;border:3px solid #fae0ad;border-radius:23px;background:linear-gradient(140deg,#162950ed,#334572ea);overflow:hidden;box-shadow:0 18px 55px #000b}.narrator-dialog{position:relative;overflow:hidden;animation:narrator-bob 5s ease-in-out infinite}.narrator-dialog:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 65%,#1f3454);pointer-events:none}.narrator-dialog img{width:100%;height:110%;object-fit:cover;object-position:center top}.narrator-name{position:absolute;bottom:10px;left:16px;background:#1b2a56e8;border:2px solid #ebc37a;padding:8px 18px;border-radius:9px;color:#ffdf9c;font-weight:900;z-index:2}.dialog-content{padding:30px 35px;display:flex;flex-direction:column;justify-content:center}.dialog-counter{color:#ffd887;letter-spacing:.11em;font-weight:900;font-size:12px}.dialog-content h2{font-size:clamp(24px,3vw,37px);color:#fff2c4;line-height:1.18;margin:13px 0}.dialog-content p{font-size:clamp(14px,1.7vw,20px);line-height:1.6;white-space:pre-line;color:#f3f3ff}.dialog-controls{display:flex;gap:11px;margin-top:22px;justify-content:flex-end;flex-wrap:wrap}.modal-backdrop{display:grid;place-items:center;background:#061327b6;backdrop-filter:blur(6px)}.modal-panel{padding:18px;width:min(800px,92vw);max-height:89vh;display:flex;flex-direction:column}.modal-panel .panel-heading{justify-content:space-between;flex-shrink:0}#modal-body{overflow:auto;touch-action:pan-y;padding:4px 8px 6px}.modal-panel .panel-heading h2{font-size:24px}.card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}.shop-card{border:2px solid #cba977;border-radius:12px;background:#fff9ee;padding:12px 8px;text-align:center}.shop-card.selected{border-color:#487acc;background:#e9f4ff}.shop-card .weapon-art{height:78px;display:grid;place-items:center;font-size:53px;filter:drop-shadow(0 3px 2px #777);text-shadow:0 0 16px var(--glow,#a6ccff)}.shop-card b{font-size:12px;display:block}.shop-card small{font-size:11px;display:block;color:#6b6677;margin:4px 0}.shop-card button{padding:7px 9px;font-size:11px;background:linear-gradient(#416ba5,#2a3b76);border:1px solid #a8c2ea;border-radius:9px;color:white;font-weight:900}.panel-note{border-left:4px solid #649cd4;background:#dcebf8;border-radius:7px;padding:10px 12px;margin:12px 0;font-size:13px;line-height:1.45}.quest-row{border:1px solid #d6bc9c;border-radius:10px;background:#fff9ec;margin:7px 0;padding:10px;display:flex;justify-content:space-between;gap:10px;font-size:13px}.quest-row.done{background:#e5f9e7}.settings-row{display:flex;align-items:center;justify-content:space-between;padding:12px 6px;border-bottom:1px solid #cdbdaf;gap:15px;font-size:14px}.settings-row select,.settings-row input{touch-action:manipulation}.region-card{background:#fff7e6;border:2px solid #cfb597;padding:13px;border-radius:12px;text-align:center;display:flex;flex-direction:column;justify-content:space-between;gap:9px}.region-card button{background:#303f74;color:#fff;border:1px solid #8fa9dc;border-radius:8px;padding:7px}.region-card.locked{filter:grayscale(.6);opacity:.7}.choice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:14px}.choice-card{border:3px solid #dfc69c;background:linear-gradient(#fff8eb,#ead9bd);border-radius:14px;min-height:135px;color:#292d4b;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:7px;gap:8px;transition:transform .18s,border-color .18s}.choice-card:hover{transform:translateY(-3px);border-color:#72a0e3}.choice-card.correct{background:#d4f6dc;border-color:#23b678}.choice-card.wrong{background:#ffe0db;border-color:#e76e63}.choice-icon{font-size:clamp(30px,4vw,62px);filter:drop-shadow(0 4px 2px #4443)}.choice-label{font-size:clamp(12px,1.3vw,17px);font-weight:900;text-align:center}.battle-header{display:flex;justify-content:space-between;align-items:center;gap:9px}.battle-header span{background:#e8d4b1;padding:5px 9px;border-radius:9px;font-weight:900;font-size:12px}.battle-prompt{font-size:clamp(17px,2.2vw,25px);font-weight:900;line-height:1.4;margin:13px 0}.battle-feedback{font-size:13px;min-height:24px;color:#38639d;font-weight:900}.battle-progress{display:flex;gap:6px;margin-top:10px}.battle-progress i{height:12px;background:#f6767b;border:2px solid #823f67;flex:1;border-radius:7px}.battle-progress i.off{background:#c6b6af;opacity:.5}.victory-box{background:#243960;border:2px solid #f5d48c;color:#fff9da;text-align:center;border-radius:14px;padding:20px;font-size:20px;margin-top:12px}.win-btn{margin-top:13px;min-width:160px}.modal-footer{margin-top:12px;display:flex;justify-content:flex-end;gap:10px}.loading-orb{font-size:65px;animation:star 2s infinite}#loading{position:absolute;inset:0;z-index:100;background:radial-gradient(circle at center,#304d84,#121c3b 80%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}#loading b{font-size:18px;color:#fff0c8}.loading-track{width:min(300px,70vw);height:13px;background:#111932;border:1px solid #d3c18b;border-radius:10px;overflow:hidden}.loading-track i{display:block;width:8%;height:100%;background:linear-gradient(90deg,#ffd165,#fff1aa);transition:width .3s}#loading small{font-size:12px;color:#ddd}#fatal{position:absolute;inset:0;z-index:101;background:#16244e;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px}#fatal p{max-width:470px}#float-toast{position:absolute;z-index:42;top:24%;left:50%;transform:translateX(-50%);min-width:150px;text-align:center;font-size:17px;font-weight:900;color:#ffebaa;pointer-events:none;text-shadow:0 2px 4px #000,0 1px 2px #000;opacity:0;transition:opacity .25s}#float-toast.show{opacity:1}.mobile-controls{position:absolute;inset:auto 0 15px;z-index:16;pointer-events:none;display:flex;align-items:flex-end;justify-content:space-between;padding:0 max(25px,env(safe-area-inset-left)) 0 max(25px,env(safe-area-inset-right))}.mobile-controls>*{pointer-events:auto}#joy-base{position:relative;width:126px;height:126px;border-radius:50%;background:#d9eaff31;border:3px solid #d6e2fa87;box-shadow:inset 0 0 22px #0006;touch-action:none;user-select:none}#joy-stick{width:58px;height:58px;position:absolute;left:31px;top:31px;background:linear-gradient(#d9e7ffb8,#566dafa4);border:2px solid #f5e5bb;border-radius:50%;box-shadow:0 4px 9px #0007;pointer-events:none}.mobile-buttons{display:flex;align-items:flex-end;gap:15px}#btn-interact,#btn-attack{border-radius:50%;border:3px solid #fff1c2;background:linear-gradient(#6d89d4ed,#23477bdc);width:75px;height:75px;box-shadow:0 3px 9px #0008;display:flex;flex-direction:column;justify-content:center;align-items:center;font-size:26px;gap:0;touch-action:none}#btn-attack{height:90px;width:90px;background:linear-gradient(#f16b63,#9f3d66);font-size:33px}#btn-attack span,#btn-interact span{font-size:9px;font-weight:900}#rotate-overlay{position:absolute;inset:0;z-index:95;background:#17234df0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;gap:10px}.phone-rotate{font-size:60px}.phone-rotate span{font-size:45px}#rotate-overlay h2{margin:4px 0}#rotate-overlay p{max-width:360px;font-size:14px;line-height:1.5}#rotate-overlay button{max-width:400px;width:90%}body.reduce-motion *,body.reduce-motion *:before{animation-duration:.001ms!important;transition-duration:.001ms!important}
@@ -120,6 +120,31 @@
 @media(max-width:850px){#creator .creator-options{padding:5px 8px}.creator-preview{background-position:34% center!important}#attack-banner{top:7%;font-size:20px}.lobby-shade{background-position:40% center!important}}
 @media(prefers-reduced-motion:reduce){#loading::before,.narrator-dialog,#attack-banner.pulse{animation:none!important}}
 
+/* V5: creator and equipment offer graphic thumbnails, not placeholder emoji. */
+#creator .option-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+#creator .option-grid .hair-style{background:linear-gradient(145deg,#172e55,#213c63);border:1px solid #a5bee29c;border-radius:13px;padding:4px 5px 2px;display:flex;flex-direction:column;align-items:center;gap:0;min-width:0;color:#e7efff;transition:transform .17s,border-color .17s,box-shadow .17s}
+#creator .option-grid .hair-style:hover{transform:translateY(-2px);border-color:#e2c484}
+#creator .option-grid .hair-style.active{border:2px solid #ffdc85;background:linear-gradient(145deg,#364e8d,#263f6a);box-shadow:0 0 16px #f7ca7770}
+#creator .option-grid .hair-style .style-thumbnail{width:min(100%,57px);height:56px;filter:drop-shadow(0 3px 6px #020c27aa)}
+#creator .option-grid .hair-style span{font-size:10px;font-weight:800;letter-spacing:.03em}
+.shop-card .weapon-art{height:105px;position:relative;overflow:visible;filter:none!important}
+.shop-card .sword-mini{height:99px;width:90px;max-width:100%;filter:drop-shadow(0 0 11px var(--glow)) drop-shadow(0 4px 3px #090b2670);transform:rotate(-14deg);transition:transform .3s ease,filter .3s ease}
+.shop-card:hover .sword-mini,.shop-card.selected .sword-mini{transform:rotate(-5deg) translateY(-5px) scale(1.06);filter:drop-shadow(0 0 19px var(--glow)) drop-shadow(0 5px 5px #090b2670)}
+.shop-card{background:linear-gradient(145deg,#fff9eb,#f4e8d6)!important;box-shadow:inset 0 1px #fff,0 5px 13px #482a3920;transition:transform .18s,box-shadow .18s}
+.shop-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px #51394933}
+#creator .creator-preview{background-position:center 41%!important}
+#creator .creator-options .swatches button{transition:transform .2s,box-shadow .2s}
+#creator .creator-options .swatches button:hover{transform:scale(1.16)}
+.creator-start{letter-spacing:.08em!important}
+#attack-banner.pulse{filter:drop-shadow(0 0 15px #80d7ff);text-transform:uppercase}
+@media(max-width:850px){#creator .option-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}#creator .option-grid .hair-style .style-thumbnail{height:34px;width:35px}#creator .option-grid .hair-style span{font-size:8px}.shop-card .weapon-art{height:61px}.shop-card .sword-mini{height:59px;width:55px}}
+@media(prefers-reduced-motion:reduce){.shop-card .sword-mini,#creator .hair-style{transition:none!important}}
+
+.v5-hit-caption{position:absolute;left:49%;top:27%;z-index:24;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:3px;color:#fff7cd;text-shadow:0 3px #342653,0 0 16px #46cbff,0 0 35px #64cfff;animation:v5-impact-reveal .9s ease-out both;font-size:clamp(13px,1.5vw,20px);font-weight:1000;letter-spacing:.08em}
+.v5-hit-caption strong{font-size:clamp(18px,3vw,40px);color:#ffe08c}
+@keyframes v5-impact-reveal{0%{opacity:0;transform:translate(-50%,25px) scale(.65)}25%{opacity:1;transform:translate(-50%,-5px) scale(1.14)}58%{opacity:1;transform:translate(-50%,-15px) scale(1)}100%{opacity:0;transform:translate(-50%,-55px) scale(.92)}}
+@media(prefers-reduced-motion:reduce){.v5-hit-caption{animation:none}}
+
 </style><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='50'%3E⚔️%3C/text%3E%3C/svg%3E"></head><body>
 <div id="game" tabindex="0">
  <canvas id="render-canvas" aria-label="Dunia petualangan 3D"></canvas><div id="vignette"></div><div id="flash"></div>
@@ -147,7 +172,7 @@
  <div id="loading"><div class="load-vista"></div><div class="load-rays"></div><div class="load-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="loading-inner"><div class="load-crest"><div class="crossed-blades">⚔</div></div><div class="load-kicker">THE ADVENTURE BEGINS</div><div class="load-logo">SECRETARY <span>QUEST</span></div><div class="load-subtitle">LEGENDA KOIN • FANTASY RPG 3D</div><div class="load-label" id="loading-note">Membangun dunia fantasi 3D...</div><div class="loading-track"><i id="loading-progress"></i></div><div class="load-tip">TIP: Jawaban akuntansi yang benar membuat pedangmu menyerang!</div></div></div>
 </div>
 <script type="module">
-// Secretary Quest RPG 3D V3: deployable single file, CDN fallback.
+// Secretary Quest RPG 3D V5: deployable single file, CDN fallback.
 let THREE;
 try { THREE=await import('https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js'); }
 catch(first) { try { THREE=await import('https://unpkg.com/three@0.160.1/build/three.module.js'); }
@@ -225,179 +250,304 @@ return {LEVELS_DATA,QUESTIONS};
 })();
 const {createHero,createMonster,animateHero,animateMonster,appearanceOptions,createSword}=(()=>{
 
-// All actors and equipment are genuine three-dimensional meshes. No sprite billboards.
 const pal={gold:0xf8c979,navy:0x202f57,leather:0x553f38,cream:0xfff2d3};
 const mats=new Map();
 function material(hex,met=.02,rough=.66,emit=0){const key=[hex,met,rough,emit].join('/');if(!mats.has(key))mats.set(key,new THREE.MeshStandardMaterial({color:hex,metalness:met,roughness:rough,flatShading:false,emissive:emit?hex:0,emissiveIntensity:emit}));return mats.get(key);}
+const softMat=(hex,metal=.06,rough=.5)=>new THREE.MeshStandardMaterial({color:hex,metalness:metal,roughness:rough});
 function put(p,g,c,x=0,y=0,z=0){const o=new THREE.Mesh(g,c?.isMaterial?c:material(c));o.position.set(x,y,z);o.castShadow=true;o.receiveShadow=true;p.add(o);return o;}
-function ell(p,c,x,y,z,rx,ry,rz,quality=16){const o=put(p,new THREE.SphereGeometry(1,quality,Math.max(10,Math.floor(quality*.7))),c,x,y,z);o.scale.set(rx,ry,rz);return o;}
+function ell(p,c,x,y,z,rx,ry,rz,q=18){const o=put(p,new THREE.SphereGeometry(1,q,Math.max(10,Math.floor(q*.7))),c,x,y,z);o.scale.set(rx,ry,rz);return o;}
 function cub(p,c,x,y,z,sx,sy,sz){return put(p,new THREE.BoxGeometry(sx,sy,sz),c,x,y,z);}
 function cyl(p,c,x,y,z,top,bot,h,n=12){return put(p,new THREE.CylinderGeometry(top,bot,h,n),c,x,y,z);}
 function con(p,c,x,y,z,r,h,n=8){return put(p,new THREE.ConeGeometry(r,h,n),c,x,y,z);}
-function gem(p,c,x,y,z,r=.15){const a=put(p,new THREE.OctahedronGeometry(r,0),material(c,.32,.19,.4),x,y,z);return a;}
-function tube(p,c,points,rad=.07){return put(p,new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points.map(v=>new THREE.Vector3(...v))),Math.max(8,points.length*5),rad,7,false),c);}
+function gem(p,c,x,y,z,r=.15){return put(p,new THREE.OctahedronGeometry(r,0),material(c,.32,.19,.4),x,y,z);}
+function tube(p,c,points,rad=.07,segs=18){return put(p,new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points.map(v=>new THREE.Vector3(...v))),segs,rad,7,false),c);}
+function easeOutCubic(t){return 1-Math.pow(1-Math.max(0,Math.min(1,t)),3);}
+function easeInOutSine(t){return -(Math.cos(Math.PI*Math.max(0,Math.min(1,t)))-1)/2;}
+
 const SKINS=[0xf2bd9d,0xcc8766,0x976045,0xffd7b8,0xbc7657,0x764c3c];
 const HAIRS=[0x352638,0x795037,0x17213a,0xa95436,0xf4c772,0xcd5d89,0xe5e4e7];
 const OUTFITS=[0x416fc4,0xb44965,0x368f78,0x8659b4,0xc58b40,0x333c65];
 const appearanceOptions={skins:SKINS,hairs:HAIRS,outfits:OUTFITS};
 
-// V3 hand-modelled face and costume details; all elements are genuine 3D meshes.
-const smoothMat = (hex,metal=.08,rough=.45)=>new THREE.MeshStandardMaterial({color:hex,metalness:metal,roughness:rough});
-function curveStroke(root,color,pts,r=.025){const path=new THREE.CatmullRomCurve3(pts.map(a=>new THREE.Vector3(...a)));return put(root,new THREE.TubeGeometry(path,16,r,6,false),smoothMat(color));}
-function stylizedFace(body,skin,hairColor,gender){
- const white=smoothMat(0xfff9f1),ink=smoothMat(0x382d40),iris=smoothMat(gender==='female'?0x895646:0x49748d),glint=new THREE.MeshBasicMaterial({color:0xffffff});
- for(const side of [-1,1]){
-  // Eyes are convex clusters, not flat cubes; soft upper eyelid, layered irises and glints.
-  ell(body,white,side*.195,2.377,.409,.145,.162,.044,20);
-  ell(body,iris,side*.194,2.358,.451,.092,.119,.038,18);
-  ell(body,ink,side*.190,2.366,.488,.049,.085,.021,16);
-  ell(body,glint,side*.218,2.421,.514,.032,.038,.012,12);
-  ell(body,glint,side*.155,2.328,.51,.017,.019,.009,10);
-  curveStroke(body,0x332637,[[side*.055,2.51,.418],[side*.194,2.536,.437],[side*.334,2.502,.391]],.025);
-  curveStroke(body,hairColor,[[side*.09,2.616,.345],[side*.21,2.635,.359],[side*.305,2.604,.332]],.023);
-  // Blush around the cheeks, small eyelashes / lower lid.
-  ell(body,0xe9a4a5,side*.357,2.249,.324,.108,.054,.013,12);
-  if(gender==='female')for(let i=0;i<2;i++)curveStroke(body,0x382638,[[side*(.305+i*.02),2.512,.4],[side*(.343+i*.03),2.548+i*.012,.36]],.014);
- }
- ell(body,0xffd3ba,0,2.288,.431,.060,.05,.043,12);
- curveStroke(body,0xb46a74,[[-.067,2.179,.418],[0,2.164,.441],[.065,2.182,.418]],.017);
+function curveStroke(root,color,pts,r=.025,metal=.08,rough=.45){
+ const path=new THREE.CatmullRomCurve3(pts.map(a=>new THREE.Vector3(...a)));
+ return put(root,new THREE.TubeGeometry(path,20,r,6,false),softMat(color,metal,rough));
 }
-function beautifulHair(body,gender,style,hairColor){
- const scalp=new THREE.Group();body.add(scalp);
- const base=smoothMat(hairColor,.09,.43),shine=smoothMat(new THREE.Color(hairColor).lerp(new THREE.Color(0xffe1b8),.16),.12,.32);
- ell(scalp,base,0,2.818,-.052,.54,.35,.515,24);
- const n=gender==='female'?15:13;
- for(let i=0;i<n;i++){
-  const side=(i/(n-1)-.5)*2;const turn=i/(n-1)*Math.PI;
-  const x=side*.50,front=.38+Math.cos(turn)*.08,fall=.18+(i%4)*.045;
-  // Each strand has a smooth sweeping arc with a tapering end.
-  const curl=curveStroke(scalp,i%4===0?shine:base,[[x*.56,3.045,.15],[x*.84,2.91,front*.79],[x+side*.05,2.68+fall*.25,front],[x+side*.09,2.56-fall*.27,front-.02]],.053+(i%3)*.007);
- }
- if(gender==='female'||[2,5].includes(style)){
-  for(let side of [-1,1])for(let i=0;i<5;i++){
-   const x=side*(.38+i*.038),offset=i*.08;
-   curveStroke(scalp,i%3?base:shine,[[x,2.73,-.24-offset],[x+side*.11,2.47,-.35-offset],[x+side*.085,2.02,-.29-offset],[x+side*.04,1.53-i*.055,-.22-offset]],.095-i*.004);
-  }
- } else {
-  for(let i=0;i<8;i++){let x=(i-3.5)*.135;curveStroke(scalp,i%3?base:shine,[[x*.8,2.98,.14],[x,3.17+Math.sin(i)*.07,.07],[x+Math.sin(i*2)*.10,3.26+Math.cos(i)*.10,-.09]],.058);}
- }
- // A fine gold/blue hair ornament on the left gives the silhouette personality.
- if(gender==='female'){
-  const clip=gem(scalp,0xffdb8d,-.52,2.79,.23,.14);clip.rotation.z=.4;
-  gem(scalp,0x7fdbff,-.52,2.79,.34,.078);
- }
- return scalp;
+function petal(root,color,pts,depth=.04){
+ const s=new THREE.Shape();
+ s.moveTo(pts[0][0],pts[0][1]);
+ for(let i=1;i<pts.length;i++)s.lineTo(pts[i][0],pts[i][1]);
+ const g=new THREE.ExtrudeGeometry(s,{depth,bevelEnabled:true,bevelSegments:1,bevelThickness:.015,bevelSize:.02,steps:1});
+ g.translate(0,0,-depth*.5);
+ return put(root,g,softMat(color,.04,.62));
 }
-function fantasyOutfit(body,gender,outfit,trim){
- const mantle=smoothMat(outfit,.13,.53),gold=smoothMat(0xe9c27d,.52,.3),white=smoothMat(0xfff0dc,.01,.73);
- // Layered collar and coat tails.
- for(let side of [-1,1]){
-  const collar=ell(body,white,side*.19,1.995,.29,.23,.17,.11);collar.rotation.z=side*.45;
-  const coatTail=ell(body,mantle,side*.30,1.04,-.18,.23,.59,.14);coatTail.rotation.z=side*.11;
-  const pad=ell(body,gold,side*.52,1.94,.00,.235,.13,.25);pad.rotation.z=side*.32;
-  const blueGem=gem(body,0x77ccf4,side*.535,2.00,.16,.077);blueGem.rotation.z=side*.2;
- }
- curveStroke(body,0xf7dba9,[[-.42,1.32,.25],[-.48,1.52,.29],[-.45,1.87,.19]],.027);
- curveStroke(body,0xf7dba9,[[.42,1.32,.25],[.48,1.52,.29],[.45,1.87,.19]],.027);
- if(gender==='female'){
-  for(let i=0;i<10;i++){
-   const theta=i/10*Math.PI*2;
-   const flap=ell(body,i%2?white:mantle,Math.sin(theta)*.31,1.04,Math.cos(theta)*.28,.16,.40,.13);flap.rotation.z=-Math.sin(theta)*.22;
-  }
- } else {
-  for(let i=0;i<3;i++){const strip=cub(body,gold,0,1.79-i*.22,.333,.53,.038,.045);strip.rotation.z=i===1?.10:-.02;}
- }
- const brooch=gem(body,0x7ad8ff,0,2.005,.38,.15);brooch.scale.y=1.4;
+function crystalPlane(root,color,w=.24,h=.85){
+ const s=new THREE.Shape();
+ s.moveTo(0,0);s.lineTo(-w*.45,h*.18);s.lineTo(-w,h*.78);s.lineTo(0,h);s.lineTo(w,h*.78);s.lineTo(w*.45,h*.18);s.closePath();
+ const g=new THREE.ExtrudeGeometry(s,{depth:.028,bevelEnabled:true,bevelSegments:1,bevelThickness:.009,bevelSize:.012,steps:1});
+ g.translate(0,0,-.014);
+ return put(root,g,new THREE.MeshBasicMaterial({color,transparent:true,opacity:.26,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide}));
 }
 
-function hair(root,style,color,gender){
- const group=new THREE.Group();root.add(group);
- ell(group,color,0,2.72,-.04,.53,.35,.51);let n=style===3?13:10;
- for(let i=0;i<n;i++){const a=Math.PI*(.08+(i+.3)/(n+.5)*.91);const x=Math.cos(a)*.43;let z=Math.sin(a)*.31+.22;
-   let h=style===1?.32:style===4?.46:style===3?.18:.27;
-   const lock=ell(group,color,x,2.75+h*.17,z,.105,h,.15);lock.rotation.z=-x*.39;
+function stylizedFace(body,skin,hairColor,gender){
+ const white=softMat(0xfff9f1,.02,.26), iris=softMat(gender==='female'?0x85594d:0x4d6f8a,.08,.22), ink=softMat(0x30263c,.1,.32), lip=softMat(gender==='female'?0xc7727a:0xa56662,.02,.55), blush=softMat(0xe8a2a8,.02,.72);
+ // face silhouette and soft cheeks
+ ell(body,skin,0,2.36,.02,.50,.56,.46,24);
+ ell(body,skin,-.48,2.34,-.02,.075,.16,.10,14); ell(body,skin,.48,2.34,-.02,.075,.16,.10,14);
+ ell(body,0xffd0c5,-.30,2.22,.34,.12,.065,.025,12); ell(body,0xffd0c5,.30,2.22,.34,.12,.065,.025,12);
+ for(const side of [-1,1]){
+  ell(body,white,side*.205,2.395,.405,.142,.16,.05,18);
+  ell(body,iris,side*.205,2.382,.455,.09,.12,.04,18);
+  ell(body,ink,side*.205,2.388,.493,.048,.076,.022,16);
+  ell(body,0xffffff,side*.228,2.425,.515,.026,.034,.014,10);
+  ell(body,0xffffff,side*.175,2.36,.515,.013,.015,.007,10);
+  const lash=curveStroke(body,0x2f2438,[[side*.06,2.515,.405],[side*.205,2.545,.44],[side*.335,2.505,.39]],gender==='female'?.023:.02);
+  if(gender==='female')for(let i=0;i<3;i++)curveStroke(body,0x30263c,[[side*(.30+i*.015),2.50,.40],[side*(.345+i*.025),2.536+i*.012,.36]],.012);
+  curveStroke(body,hairColor,[[side*.11,2.62,.34],[side*.22,2.64,.35],[side*.30,2.61,.32]],.02,.05,.4);
  }
- if(style===1){for(let i=0;i<6;i++){let l=con(group,color,(i-2.5)*.14,3.1,-.13,.15,.49,6);l.rotation.z=(i-2.5)*.18;}}
- if(style===2||gender==='female'){for(let side of [-1,1]){ell(group,color,side*.48,2.31,-.12,.19,.54,.23);if(style===2)ell(group,color,side*.41,2.04,-.21,.14,.37,.17);}}
- if(style===3){for(let j=0;j<8;j++){const a=j*Math.PI/4;ell(group,color,Math.sin(a)*.34,3.0,Math.cos(a)*.28,.22,.2,.24);}}
- if(style===4){for(let j=0;j<5;j++){const q=con(group,color,(j-2)*.18,3.12,-.2,.18,.57,7);q.rotation.z=(j-2)*-.28;}}
- if(style===5){ell(group,color,0,2.87,-.3,.54,.39,.42);for(let j=0;j<4;j++)tube(group,color,[[.3,.0,0],[.4,0,0]].map((_,i)=>[Math.sin(j*2)*.30,2.88-i*.22,-.28]),.1);}
- group.userData.locks=group.children;return group;
+ ell(body,0xf4c8af,0,2.30,.445,.055,.07,.05,12);
+ curveStroke(body,0x9b6266,[[-.07,2.17,.418],[0,2.155,.437],[.07,2.17,.418]],.015);
+ const lipBottom=curveStroke(body,lip.color?.getHex?.()??(gender==='female'?0xc7727a:0xa56662),[[-.05,2.148,.418],[0,2.135,.425],[.05,2.148,.418]],.013);
+ return {lipBottom};
 }
-function bladeGeometry(width,length,forward=.09,style=0){const s=new THREE.Shape();s.moveTo(-width,0);s.lineTo(-width*.86,length*.63);s.lineTo(-width*.48,length*.89);s.lineTo(0,length);s.lineTo(width*.48,length*.89);s.lineTo(width*.86,length*.63);s.lineTo(width,0);s.closePath();let depth=style===7?.17:.105;const g=new THREE.ExtrudeGeometry(s,{depth,steps:1,bevelEnabled:true,bevelSegments:2,bevelThickness:.045,bevelSize:.065,curveSegments:2});g.computeVertexNormals();g.translate(0,0,-depth*.5);return g;}
+
+function longLock(root,color,x,z,length=.88,sway=.08,rad=.08,shineColor=null){
+ const base=color?.isMaterial?color:softMat(color,.08,.42);
+ const shine=shineColor?softMat(shineColor,.1,.34):base;
+ curveStroke(root,base,[[x*.72,2.96,z*.15],[x*.92,2.8,z*.55],[x,2.42,z],[x+sway*Math.sign(x||1),1.96,z-.05],[x+sway*.45*Math.sign(x||1),1.65-length*.1,z-.12]],rad);
+ if(Math.abs(x)>.12)curveStroke(root,shine,[[x*.63,2.92,z*.1],[x*.80,2.72,z*.48],[x*.91,2.39,z*.82]],Math.max(.02,rad*.34),.08,.28);
+}
+function buildHair(body,gender,style,hairColor){
+ const group=new THREE.Group(); body.add(group);
+ const shineColor=new THREE.Color(hairColor).lerp(new THREE.Color(0xffe1b8),.18).getHex();
+ const base=softMat(hairColor,.08,.42), shine=softMat(shineColor,.11,.28);
+ const cap=ell(group,base,0,2.80,-.03,.53,.34,.51,24);
+ // bangs / fringe
+ const fringeSets={
+  female:[[-.28,2.78,.40],[-.12,2.65,.46],[0,2.58,.50],[.12,2.65,.46],[.28,2.78,.40]],
+  male:[[-.32,2.82,.36],[-.16,2.68,.46],[0,2.63,.5],[.17,2.70,.45],[.32,2.82,.34]]
+ };
+ const fringe=fringeSets[gender]||fringeSets.female;
+ fringe.forEach((p,i)=>{ell(group,i%2?shine:base,p[0],p[1],p[2],gender==='female'?.10:.09,gender==='female'?.20:.18,.10,16).rotation.z=p[0]*-.8;});
+ const sideLocks=()=>{for(const side of [-1,1]){curveStroke(group,base,[[side*.33,2.73,.18],[side*.44,2.55,.10],[side*.48,2.30,.01],[side*.42,2.05,-.06]],.08);curveStroke(group,shineColor,[[side*.28,2.72,.19],[side*.38,2.55,.14],[side*.40,2.33,.09]],.03,.08,.26);}};
+ sideLocks();
+ const s=style%6;
+ if(gender==='female'){
+  if(s===0){ // long graceful
+   for(let i=0;i<6;i++){const off=(i-2.5)*.09;longLock(group,i%2?base:shine,off,-.18-i*.06,.9+Math.abs(off)*.15,off*.08,.075,shineColor);} 
+  } else if(s===1){ // side swept medium
+   for(let i=0;i<5;i++){const off=(i-2)*.10;longLock(group,i%2?base:shine,off,-.10-i*.04,.72+Math.abs(off)*.1,off*.04,.07,shineColor);} 
+   curveStroke(group,base,[[-.44,2.86,.24],[-.24,2.62,.38],[0,2.58,.47],[.30,2.74,.30]],.09);
+  } else if(s===2){ // ponytail
+   for(let side of [-1,1])curveStroke(group,base,[[side*.26,2.70,-.18],[side*.18,2.42,-.35],[side*.10,2.12,-.52],[side*.02,1.68,-.72]],.10);
+   cyl(group,pal.gold,0,2.44,-.24,.10,.10,.10,12);
+   for(let i=0;i<8;i++){const a=(i/7-.5);curveStroke(group,i%2?base:shine,[[a*.08,2.40,-.25],[a*.16,2.13,-.42],[a*.22,1.78,-.64],[a*.12,1.38,-.78]],.08-Math.abs(a)*.02);}
+  } else if(s===3){ // bob
+   for(let side of [-1,1])for(let i=0;i<4;i++){curveStroke(group,i%2?base:shine,[[side*(.15+i*.06),2.76,-.02],[side*(.24+i*.07),2.50,-.12],[side*(.28+i*.06),2.18,-.16]],.09-i*.008);} 
+   curveStroke(group,base,[[-.42,2.72,-.05],[0,2.64,-.22],[.42,2.72,-.05]],.10);
+  } else if(s===4){ // bun
+   for(let i=0;i<5;i++){const off=(i-2)*.10;longLock(group,i%2?base:shine,off,-.14-i*.03,.62,.03,.07,shineColor);} 
+   ell(group,base,0,3.10,-.02,.22,.19,.22,18); ell(group,shine,0,3.12,.06,.12,.10,.12,12);
+  } else { // twin tails
+   for(let side of [-1,1]){cyl(group,pal.gold,side*.28,2.44,-.14,.06,.06,.08,12); for(let i=0;i<5;i++){curveStroke(group,i%2?base:shine,[[side*.28,2.41,-.16],[side*(.36+i*.03),2.12,-.28],[side*(.42+i*.03),1.78,-.32],[side*(.39+i*.02),1.42,-.18]],.08-i*.007);}}
+  }
+  const clip=gem(group,0xffdb8d,-.52,2.79,.23,.14);clip.rotation.z=.4;gem(group,0x7fdbff,-.52,2.79,.34,.078);
+ } else {
+  if(s===0){ // short neat
+   for(let i=0;i<7;i++){const x=(i-3)*.11;curveStroke(group,i%2?base:shine,[[x*.72,2.96,.08],[x,3.06+.02*Math.sin(i),-.02],[x*1.1,2.90,-.12]],.065);}
+  } else if(s===1){ // messy
+   for(let i=0;i<11;i++){const x=(i-5)*.09;curveStroke(group,i%2?base:shine,[[x*.65,2.96,.08],[x,3.15+.06*Math.sin(i),-.06],[x+Math.sin(i)*.08,2.92,-.22]],.06);} 
+  } else if(s===2){ // side part
+   for(let i=0;i<8;i++){const x=(i-3.5)*.10;curveStroke(group,i%2?base:shine,[[x*.75,2.98,.12],[x+(x<0?-.05:.08),3.05,-.05],[x+(x<0?-.12:.14),2.82,-.22]],.06);} 
+   curveStroke(group,shineColor,[[-.10,3.0,.16],[.22,2.96,.02],[.38,2.83,-.16]],.03,.08,.28);
+  } else if(s===3){ // spikes
+   for(let i=0;i<9;i++){const x=(i-4)*.10;const spike=con(group,i%2?shine:base,x,3.04+Math.random()*.03,-.05,.10,.40+Math.abs(x)*.18,6); spike.rotation.z=-x*.7; spike.rotation.x=.2;} 
+  } else if(s===4){ // medium layered
+   for(let i=0;i<6;i++){const x=(i-2.5)*.11;longLock(group,i%2?base:shine,x,-.12-i*.03,.56+Math.abs(x)*.12,.04,.06,shineColor);} 
+  } else { // longer tied
+   for(let i=0;i<6;i++){const x=(i-2.5)*.09;curveStroke(group,i%2?base:shine,[[x*.7,2.95,.06],[x,2.80,-.06],[x*.8,2.56,-.22]],.06);} 
+   cyl(group,pal.gold,0,2.46,-.20,.07,.07,.08,12); for(let i=0;i<6;i++){curveStroke(group,i%2?base:shine,[[0,2.42,-.22],[(i-2.5)*.04,2.14,-.36],[(i-2.5)*.05,1.82,-.44],[(i-2.5)*.04,1.52,-.38]],.06);} 
+  }
+ }
+ group.userData.hairNodes=group.children; return group;
+}
+
+function bladeGeometry(width,length,style=0){
+ const s=new THREE.Shape();
+ s.moveTo(-width,0); s.quadraticCurveTo(-width*.96,length*.26,-width*.78,length*.62);
+ s.lineTo(-width*.42,length*.90); s.lineTo(0,length); s.lineTo(width*.42,length*.90);
+ s.quadraticCurveTo(width*.96,length*.26,width,0); s.closePath();
+ const depth=style===7?.18:.115;
+ const g=new THREE.ExtrudeGeometry(s,{depth,steps:1,bevelEnabled:true,bevelSegments:2,bevelThickness:.042,bevelSize:.055,curveSegments:4});
+ g.computeVertexNormals(); g.translate(0,0,-depth*.5); return g;
+}
+
 function createSword(type='basic'){
- const dat=SWORDS.find(s=>s.id===type)||SWORDS[0];const index=Math.max(0,SWORDS.findIndex(s=>s.id===type));const root=new THREE.Group();root.userData.color=dat.glow;
- const metal=material(dat.color,index? .62:.83,index?.24:.34,index? .22:0), guard=material(index===4?0x514165:pal.gold,.7,.3);
- const w=.14+index*.018,l=1.18+index*.049;
- const blade=put(root,bladeGeometry(w,l,.1,index),metal,0,.37,0);blade.rotation.z=index===6?-.08:0;
- if(index>0){const bright=material(dat.glow,.23,.17,.95);const ridge=put(root,new THREE.BoxGeometry(.065,l*.86,.035),bright,0,.95,.075);ridge.rotation.z=blade.rotation.z;
-   for(let j=0;j<(index>=5?3:1);j++){const g=gem(root,dat.glow,(j-1)*w*.9,.89+j*.26,.11,.075);g.scale.y=1.7;}}
- if(index===2||index===7){for(let k of [-1,1]){const spike=con(root,material(dat.color,.5,.22,.4),k*w*.76,.83,.03,.09,.48,5);spike.rotation.z=k*.26;}}
- if(index===3||index===6){for(let k of [-1,1]){let edge=tube(root,material(dat.glow,.15,.3,.8),[[k*w,.58,.05],[k*(w+.11),.89,.06],[k*w*.82,1.22,.07]],.032);}}
+ const dat=SWORDS.find(s=>s.id===type)||SWORDS[0];
+ const index=Math.max(0,SWORDS.findIndex(s=>s.id===type));
+ const root=new THREE.Group();
+ root.userData.color=dat.glow;
+ const metal=material(dat.color,index? .62:.26,index? .20:.32,index? .26:.06), guard=material(index===4?0x514165:pal.gold,.72,.26,.04);
+ const w=.14+index*.018,l=1.20+index*.055;
+ const blade=put(root,bladeGeometry(w,l,index),metal,0,.38,0);
+ blade.rotation.z=index===6?-.08:0;
+ const edgeMat=material(new THREE.Color(dat.color).lerp(new THREE.Color(0xffffff),.22).getHex(),.22,.18,.22);
+ const ridge=put(root,new THREE.BoxGeometry(.055,l*.88,.03),edgeMat,0,.97,.082); ridge.rotation.z=blade.rotation.z;
+ if(index>0){
+   for(let j=0;j<(index>=5?3:1);j++){const g=gem(root,dat.glow,(j-1)*w*.9,.90+j*.25,.12,.08);g.scale.y=1.65;}
+ }
+ if(index===1){curveStroke(root,dat.glow,[[-.06,.52,.08],[-.01,.93,.14],[.08,1.28,.08]],.028,.05,.15);}
+ if(index===2||index===7){for(let k of [-1,1]){const spike=con(root,material(dat.color,.5,.22,.22),k*w*.78,.83,.04,.09,.48,5);spike.rotation.z=k*.25;}}
+ if(index===3||index===6){for(let k of [-1,1])tube(root,new THREE.MeshBasicMaterial({color:dat.glow,transparent:true,opacity:.55,blending:THREE.AdditiveBlending,depthWrite:false}),[[k*w,.58,.05],[k*(w+.14),.89,.08],[k*w*.74,1.22,.12]],.032,12);}
  if(index===4){for(let k of [-1,1]){const prong=con(root,0x714fbc,k*.18,.45,.0,.11,.42,6);prong.rotation.z=k*.7;}}
  if(index===5){for(let k=0;k<4;k++)gem(root,0xffe8a5,(k%2?1:-1)*.095,.72+k*.19,.09,.09);}
- const grip=cyl(root,0x2c304c,0,-.1,0,.082,.094,.55,11);for(let j=0;j<5;j++){const ring=cyl(root,0xe3b96f,0,-.34+j*.105,0,.09,.09,.026,10);ring.material=guard;}
- const guardBar=cub(root,guard,0,.32,0,.64+index*.018,.12,.21);for(let k of [-1,1]){const wing=con(root,guard,k*(.32+index*.009),.39,0,.13,.32,5);wing.rotation.z=k*.52;}gem(root,dat.glow,0,.31,.15,.135);
- const pommel=gem(root,dat.glow,0,-.46,0,.16);
- if(index>=1){const auraMat=new THREE.MeshBasicMaterial({color:dat.glow,transparent:true,opacity:.11,depthWrite:false,blending:THREE.AdditiveBlending,side:THREE.DoubleSide});const aura=put(root,new THREE.CylinderGeometry(.32,.38,l,8,1,true),auraMat,0,.97,0);aura.userData.aura=true;}
- root.rotation.z=-Math.PI/5;root.scale.setScalar(.78);root.userData.bloom=index>0;return root;
+ if(index===6){const head=con(root,material(0xff4d5a,.42,.18,.15),0,1.22,.14,.14,.42,6); head.rotation.x=.85; head.rotation.z=.12; gem(root,0xffa95a,0,1.36,.29,.09);}
+ if(index===7){for(let i=0;i<4;i++)gem(root,i%2?0x73e4ff:0x96a1ff,(i%2?-.11:.11),.70+i*.22,.11,.065+i*.008);}
+ const grip=cyl(root,0x2c304c,0,-.1,0,.084,.096,.55,14);
+ for(let j=0;j<5;j++){const ring=cyl(root,0xe3b96f,0,-.34+j*.105,0,.09,.09,.026,12); ring.material=guard;}
+ const guardBar=cub(root,guard,0,.32,0,.66+index*.02,.12,.23);
+ for(let k of [-1,1]){const wing=con(root,guard,k*(.33+index*.009),.39,0,.13,.33,5);wing.rotation.z=k*.52;}
+ gem(root,dat.glow,0,.31,.15,.135); gem(root,dat.glow,0,-.46,0,.16);
+ // premium aura stack
+ const auraParts=[];
+ const glowColor=dat.glow;
+ if(index>=0){
+   const shell1=put(root,new THREE.CylinderGeometry(.22,.28,l*.92,8,1,true),new THREE.MeshBasicMaterial({color:glowColor,transparent:true,opacity:index?0.16:0.08,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide}),0,.95,0);
+   const shell2=put(root,new THREE.CylinderGeometry(.32,.39,l*1.03,8,1,true),new THREE.MeshBasicMaterial({color:glowColor,transparent:true,opacity:index?0.08:0.03,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide}),0,.97,0);
+   const planeA=crystalPlane(root,glowColor,.23+index*.02,l*.78); planeA.position.set(0,.58,0); planeA.rotation.x=Math.PI/2; planeA.rotation.z=.35;
+   const planeB=crystalPlane(root,glowColor,.18+index*.02,l*.68); planeB.position.set(0,.64,0); planeB.rotation.z=Math.PI/2;
+   const ring1=new THREE.Mesh(new THREE.TorusGeometry(.18+index*.01,.015,8,32),new THREE.MeshBasicMaterial({color:glowColor,transparent:true,opacity:.78,blending:THREE.AdditiveBlending,depthWrite:false})); ring1.position.set(0,.28,0); ring1.rotation.x=Math.PI/2; root.add(ring1);
+   const ring2=new THREE.Mesh(new THREE.TorusGeometry(.14+index*.01,.012,8,32),new THREE.MeshBasicMaterial({color:glowColor,transparent:true,opacity:.52,blending:THREE.AdditiveBlending,depthWrite:false})); ring2.position.set(0,1.26,0); ring2.rotation.y=Math.PI/2; root.add(ring2);
+   auraParts.push(shell1,shell2,planeA,planeB,ring1,ring2);
+   if(index>=1){for(let i=0;i<3;i++){const mote=gem(root,glowColor,(i-1)*.08,.62+i*.25,.12,.04+i*.01); mote.material=new THREE.MeshBasicMaterial({color:glowColor,transparent:true,opacity:.85,blending:THREE.AdditiveBlending,depthWrite:false}); auraParts.push(mote);} }
+ }
+ root.rotation.z=-Math.PI/5; root.scale.setScalar(.80);
+ root.userData.bloom=index>0; root.userData.auraParts=auraParts; root.userData.auraBaseColor=glowColor;
+ return root;
 }
+
 function createHero(appearance={}){
- const gender=appearance.gender||'female',skin=appearance.skin??SKINS[0],outfit=OUTFITS[appearance.outfit||0],hairColor=appearance.hairColor??HAIRS[0];
+ const gender=appearance.gender||'female',skin=appearance.skin??SKINS[0],outfit=OUTFITS[appearance.outfit||0],hairColor=appearance.hairColor??HAIRS[0],hairStyle=appearance.hair||0;
  const root=new THREE.Group(),body=new THREE.Group();root.add(body);
- const boot=material(0x2b304c,.11,.48), coat=material(outfit,.1,.62), trim=material(pal.gold,.43,.35);
+ const boot=material(0x2b304c,.16,.44), coat=material(outfit,.08,.58), trim=material(pal.gold,.42,.30), undershirt=material(0xf4efe7,.01,.72), glove=material(0xd6dce8,.03,.58);
+ const hips=new THREE.Group(); hips.position.y=1.22; body.add(hips);
  const legs=[];
- for(let side of [-1,1]){let leg=new THREE.Group();leg.position.set(side*.225,1.13,0);body.add(leg);legs.push(leg);ell(leg,coat,0,-.15,0,.19,.34,.23);ell(leg,boot,0,-.52,.085,.23,.22,.32);cub(leg,trim,0,-.42,.225,.31,.055,.08);}
- const torso=ell(body,coat,0,1.6,0,.51,.66,.32);const skirt=cyl(body,coat,0,1.27,0,.42,.5,.47,12);
- for(let s of [-1,1]){const strap=cub(body,trim,s*.38,1.63,.27,.075,.59,.08);strap.rotation.z=s*.08;}
- const undershirt=ell(body,0xeae1d3,0,1.67,.29,.16,.44,.075);const belt=cyl(body,pal.leather,0,1.24,0,.42,.43,.13,12);gem(body,pal.gold,0,1.25,.46,.135);
- const cape=new THREE.Group();body.add(cape);cape.position.set(0,1.88,-.31);let cv=new THREE.Shape();cv.moveTo(-.39,0);cv.lineTo(.39,0);cv.lineTo(.55,-1.28);cv.quadraticCurveTo(0,-1.56,-.52,-1.25);cv.closePath();let cg=new THREE.ShapeGeometry(cv,12);const cloak=put(cape,cg,material(gender==='female'?0x95445f:0x3e4b94,.08,.8),0,0,-.09);cloak.material.side=THREE.DoubleSide;cloak.rotation.x=-.12;
- ell(body,material(skin),0,2.35,0,.48,.49,.435,20);
- for(let s of [-1,1])ell(body,skin,s*.475,2.34,-.02,.085,.16,.10);
+ for(let side of [-1,1]){
+  const leg=new THREE.Group(); leg.position.set(side*.18,1.04,0); body.add(leg); legs.push(leg);
+  ell(leg,skin,0,.20,.02,.14,.29,.13,14); // thigh
+  ell(leg,coat,0,-.12,.02,.15,.38,.14,14);
+  ell(leg,boot,0,-.56,.08,.18,.19,.31,16);
+  cub(leg,trim,0,-.42,.19,.21,.045,.06);
+ }
+ ell(hips,coat,0,.06,0,.44,.22,.26,16);
+ const torso=ell(body,coat,0,1.74,0,.44,.60,.28,22);
+ const waist=ell(body,coat,0,1.36,.02,.36,.22,.24,16);
+ if(gender==='female'){
+  for(let i=0;i<8;i++){const a=i/8*Math.PI*2;const flap=ell(body,i%2?undershirt:coat,Math.sin(a)*.25,1.18,Math.cos(a)*.18,.12,.33,.11,14); flap.rotation.z=-Math.sin(a)*.18;}
+ } else {
+  for(const side of [-1,1]){const tail=ell(body,coat,side*.14,1.08,-.08,.14,.45,.12,14); tail.rotation.z=side*.08;}
+ }
+ ell(body,undershirt,0,1.80,.28,.17,.46,.08,14);
+ cyl(body,pal.leather,0,1.30,0,.37,.40,.10,14);
+ gem(body,pal.gold,0,1.31,.37,.12);
+ for(const s of [-1,1]){const strap=cub(body,trim,s*.29,1.74,.23,.07,.58,.06); strap.rotation.z=s*.07; const pad=ell(body,trim,s*.43,2.00,.00,.19,.11,.20,14); pad.rotation.z=s*.22; gem(body,0x77ccf4,s*.47,2.04,.14,.06);}
+ const cape=new THREE.Group(); body.add(cape); cape.position.set(0,1.98,-.27);
+ const capeShape=new THREE.Shape(); capeShape.moveTo(-.32,0); capeShape.lineTo(.32,0); capeShape.lineTo(.52,-1.08); capeShape.quadraticCurveTo(0,-1.36,-.52,-1.06); capeShape.closePath();
+ const capeMesh=put(cape,new THREE.ShapeGeometry(capeShape,18),material(gender==='female'?0x9b5168:0x42529b,.08,.76),0,0,-.07); capeMesh.material.side=THREE.DoubleSide; capeMesh.rotation.x=-.10;
  stylizedFace(body,skin,hairColor,gender);
- const hairObj=beautifulHair(body,gender,appearance.hair||0,hairColor);
- fantasyOutfit(body,gender,outfit,trim);
+ const hairObj=buildHair(body,gender,hairStyle,hairColor);
+ for(const s of [-1,1]){const ear=ell(body,skin,s*.47,2.34,-.02,.05,.11,.06,10); ear.rotation.z=s*.2;}
+ // collar and front ornament
+ const collarL=ell(body,undershirt,-.17,2.02,.24,.18,.11,.08,14); collarL.rotation.z=-.5;
+ const collarR=ell(body,undershirt,.17,2.02,.24,.18,.11,.08,14); collarR.rotation.z=.5;
+ gem(body,0x6ad8ff,0,1.96,.35,.12).scale.y=1.4;
+ ell(body,pal.leather,-.39,1.22,.19,.16,.19,.13,10); cub(body,trim,-.39,1.25,.29,.18,.04,.04);
  const arms=[];
- for(let s of [-1,1]){const arm=new THREE.Group();arm.position.set(s*.53,1.93,0);body.add(arm);arms.push(arm);ell(arm,coat,0,-.09,0,.22,.24,.25);ell(arm,0xd8dde8,0,-.28,0,.14,.28,.17);ell(arm,skin,0,-.53,0,.16,.18,.16);cyl(arm,trim,0,-.42,0,.168,.15,.09);}
- const [left,right]=arms;const mount=new THREE.Group();right.add(mount);mount.position.set(0,-.57,.15);mount.rotation.z=-.3;let sword=createSword('basic');mount.add(sword);
- // Accessory gem, belt pouch and collar: important silhouetting details at small scales.
- gem(body,0x65d3fa,0,1.97,.37,.14);ell(body,pal.leather,-.47,1.21,.23,.20,.25,.15);cub(body,trim,-.48,1.25,.385,.24,.05,.05);
- function equip(id){mount.remove(sword);sword=createSword(id);mount.add(sword);state.sword=sword;}
- const state={root,body,left,right,legL:legs[0],legR:legs[1],swordMount:mount,appearance,equip,sword,cape,hairObj,baseY:0};root.userData.actor=state;return state;
+ for(const s of [-1,1]){
+  const arm=new THREE.Group(); arm.position.set(s*.47,1.98,0); body.add(arm); arms.push(arm);
+  ell(arm,coat,0,-.02,0,.16,.28,.16,14);
+  ell(arm,glove,0,-.28,.03,.13,.26,.13,12);
+  ell(arm,skin,0,-.52,.04,.12,.16,.12,12);
+  cyl(arm,trim,0,-.39,.02,.13,.12,.06,12);
+ }
+ const [left,right]=arms;
+ const mount=new THREE.Group(); right.add(mount); mount.position.set(.02,-.54,.17); mount.rotation.z=-.28;
+ let sword=createSword('basic'); mount.add(sword);
+ function equip(id){mount.remove(sword); sword=createSword(id); mount.add(sword); state.sword=sword;}
+ const state={root,body,left,right,legL:legs[0],legR:legs[1],swordMount:mount,appearance,equip,sword,cape,bodyCore:torso,hairObj,baseY:0,gender};
+ root.userData.actor=state;
+ return state;
 }
+
 function animateHero(h,time,dt,moving=false,attack=null){
- h.motion=h.motion??0;h.motion+=(Number(moving)-h.motion)*(1-Math.exp(-dt*9));
- const stride=Math.sin(time*(5.2+h.motion*6.8));let amp=.035+h.motion*.63;
- h.legL.rotation.x=stride*amp;h.legR.rotation.x=-stride*amp;
- h.left.rotation.x=-stride*(.027+h.motion*.42);h.right.rotation.x=stride*(.025+h.motion*.28);
- h.body.position.y=h.motion*Math.abs(stride)*.06+Math.sin(time*1.9)*.034;
- h.body.rotation.z=stride*(.009+h.motion*.035);
- h.cape.rotation.x=-.025+Math.sin(time*(2.1+h.motion*6.9))*(.028+h.motion*.115);
- h.hairObj.rotation.z=Math.sin(time*2)*.008;
- if(attack){const p=Math.max(0,Math.min(1,attack.t)),swing=Math.sin(p*Math.PI),wind=Math.sin(Math.min(1,p*2)*Math.PI);
-  h.right.rotation.x= -.25-swing*(attack.kind===1?2.9:2.15);
-  h.right.rotation.z= -.6+swing*(attack.kind===0?-1.7:attack.kind===2?2.8:-1.2);
-  h.right.rotation.y= swing*(attack.kind===1?.9:-.45);
-  h.left.rotation.x=swing*.7;
-  if(attack.kind===2)h.body.rotation.y=swing*Math.PI*2;
-  if(attack.kind===4)h.body.position.y+=Math.sin(p*Math.PI)*1.14;
-  if(attack.kind===3)h.body.position.z=-Math.sin(p*Math.PI)*1.55;
-  h.body.rotation.z+=attack.kind===0?swing*.35:attack.kind===1?-swing*.3:0;
- }else{h.right.rotation.y*=.72;h.body.rotation.y*=.75;}
+ h.motion=h.motion??0;
+ h.motion+=(Number(moving)-h.motion)*(1-Math.exp(-dt*8.5));
+ const walkSpeed=4.4+h.motion*3.0;
+ const stride=Math.sin(time*walkSpeed);
+ const opposite=Math.sin(time*walkSpeed+Math.PI);
+ const footLift=Math.max(0,Math.sin(time*walkSpeed));
+ const footLiftOpp=Math.max(0,Math.sin(time*walkSpeed+Math.PI));
+ const stepAmp=.16+h.motion*.48;
+ h.legL.rotation.x=stride*stepAmp;
+ h.legR.rotation.x=opposite*stepAmp;
+ h.legL.position.y=1.04+footLift*h.motion*.08;
+ h.legR.position.y=1.04+footLiftOpp*h.motion*.08;
+ h.left.rotation.x=opposite*(.08+h.motion*.34);
+ h.right.rotation.x=stride*(.08+h.motion*.28);
+ h.left.rotation.z=.02+stride*.08*h.motion;
+ h.right.rotation.z=-.02-opposite*.06*h.motion;
+ h.body.position.y=h.motion*(.04+Math.abs(stride)*.06)+Math.sin(time*1.8)*.018;
+ h.body.position.z=-h.motion*.02;
+ h.body.rotation.z=stride*(.01+h.motion*.05);
+ h.body.rotation.x=h.motion*.05;
+ h.cape.rotation.x=-.10+Math.sin(time*(2.1+h.motion*5.2))*(.02+h.motion*.15);
+ h.hairObj.rotation.z=Math.sin(time*2.1)*.006+h.body.rotation.z*.2;
+ // sword aura animation
+ const aura=h.sword?.userData?.auraParts||[];
+ aura.forEach((part,i)=>{
+  part.scale.setScalar(1+Math.sin(time*4+i)*.05+(i%2?0.02:0));
+  part.rotation.y+=(i%2?1:-1)*dt*.4;
+  if(part.material?.opacity!=null){const base=i<2?.16:i<4?.24:.7; part.material.opacity=Math.max(.04,base*(.72+.28*Math.sin(time*3.5+i)));}
+ });
+ if(attack){
+  const p=Math.max(0,Math.min(1,attack.t));
+  const wind=p<.25?easeOutCubic(p/.25):1;
+  const slash=p<.25?0:p<.7?easeInOutSine((p-.25)/.45):1;
+  const recover=p<.7?0:easeInOutSine((p-.7)/.3);
+  const style=attack.kind%5;
+  h.body.rotation.y= style===2 ? slash*Math.PI*1.25*(1-recover*.65) : (style===1?-slash*.24:slash*.18)*(1-recover*.6);
+  h.body.rotation.z+= (style===0?.32:style===1?-.26:style===3?.18:.22) * slash * (1-recover*.65);
+  h.body.rotation.x += -.12*wind + .08*recover;
+  h.body.position.z += -wind*.18 + slash*.30*(style===3?1.2:1);
+  h.body.position.y += (style===4?Math.sin(Math.PI*Math.min(1,p/.72))*.44:0);
+  h.right.rotation.x = -.35 - wind*.8 - slash*(style===1?2.55:style===4?2.3:2.0) + recover*2.1;
+  h.right.rotation.z = -.55 + wind*.55 + (style===0?-1.65:style===1?1.10:style===2?1.55:-1.15)*slash - recover*(style===1?.45:.2);
+  h.right.rotation.y = (style===2?1.20:.72)*slash - recover*.55;
+  h.left.rotation.x = .18 + slash*(style===1?.85:.58) - recover*.35;
+  h.left.rotation.z = .20 - slash*.32;
+  h.swordMount.rotation.x = -.05 + slash*(style===4?0.9:0.4);
+  h.swordMount.rotation.z = -.28 + slash*(style===1?-.22:.36) - recover*.08;
+ } else {
+  h.body.rotation.y*=.78;
+  h.right.rotation.y*=.72;
+  h.swordMount.rotation.x+=(0-h.swordMount.rotation.x)*(1-Math.exp(-dt*10));
+  h.swordMount.rotation.z+=(-.28-h.swordMount.rotation.z)*(1-Math.exp(-dt*10));
+ }
 }
+
 function createMonster(config={}){
  const level=config.level||1,kind=config.regionId||'village';const root=new THREE.Group(),body=new THREE.Group();root.add(body);
  const palettes={village:[0x62d8ef,0xb5ffff,0x3c9ccb],forest:[0x7acb6f,0xd1e995,0x3f9e62],cave:[0x8a72e8,0xbba8ff,0x534a9b],tower:[0xb4bdcd,0xe7e8ef,0x66839c],castle:[0xef718c,0xffb1aa,0xa9417a]};const [base,light,dark]=palettes[kind];
  if(level===20){ell(body,base,0,1.55,0,1.08,1.04,.85);ell(body,light,0,2.54,.35,.85,.79,.71);for(let s of [-1,1]){ell(body,dark,s*.4,2.52,.98,.17,.18,.10);con(body,0xffe8b5,s*.68,3.31,.11,.27,.89);const w=con(body,dark,s*1.52,1.9,-.3,.71,2.8,3);w.rotation.z=s*.72;con(body,0x623b6b,s*.65,.67,.1,.28,.83);}gem(body,0xffdd93,0,2.75,1.04,.24);
  }else if(kind==='village'||level===10){ell(body,base,0,.89,0,.9,.76,.78,20);ell(body,light,0,1.17,.22,.72,.34,.65);for(let s of [-1,1]){ell(body,0x172b59,s*.31,1.01,.73,.13,.19,.055);ell(body,0xffffff,s*.26,1.1,.79,.04,.05,.02);ell(body,0xff8fae,s*.6,.74,.57,.18,.09,.035);}ell(body,dark,0,.73,.73,.1,.055,.025);if(level===2){const book=cub(body,0xffe7b8,0,1.68,0,.95,.18,.64);book.rotation.y=.3;cub(body,0x6883bd,.14,1.78,0,.39,.05,.42);}
  }else if(kind==='forest'){ell(body,base,0,1.2,0,.57,.74,.52);ell(body,light,0,2.0,.2,.5,.51,.45);for(let s of [-1,1]){con(body,dark,s*.42,2.45,0,.23,.66);ell(body,0x233c3a,s*.19,2.11,.58,.09,.11,.04);ell(body,dark,s*.35,.57,0,.19,.42,.21);}cub(body,pal.leather,0,1.45,.51,.32,.17,.07);}
- else if(kind==='cave'){for(let j=0;j<8;j++){const a=j/8*Math.PI*2;let rock=put(body,new THREE.DodecahedronGeometry(.52+(j%2)*.17,1),material(j%2?base:dark,.25,.58),Math.sin(a)*.57,.99+Math.cos(a)*.15,Math.cos(a)*.48);rock.rotation.set(a,a*.3,a);};ell(body,light,0,1.79,.14,.55,.46,.46);for(let s of [-1,1])ell(body,0x263058,s*.22,1.83,.57,.11,.14,.04);for(let s of [-1,1]){con(body,0x83faff,s*.48,2.35,0,.23,.94);gem(body,0xa5dcff,s*.9,.75,.1,.22);}}
+ else if(kind==='cave'){for(let j=0;j<8;j++){const a=j/8*Math.PI*2;let rock=put(body,new THREE.DodecahedronGeometry(.52+(j%2)*.17,1),material(j%2?base:dark,.25,.58),Math.sin(a)*.57,.99+Math.cos(a)*.15,Math.cos(a)*.48);rock.rotation.set(a,a*.3,a);}ell(body,light,0,1.79,.14,.55,.46,.46);for(let s of [-1,1])ell(body,0x263058,s*.22,1.83,.57,.11,.14,.04);for(let s of [-1,1]){con(body,0x83faff,s*.48,2.35,0,.23,.94);gem(body,0xa5dcff,s*.9,.75,.1,.22);}}
  else if(kind==='tower'){cyl(body,base,0,1.21,0,.4,.54,1.16);ell(body,light,0,2.12,.1,.46,.46,.45);for(let s of [-1,1]){ell(body,0x263058,s*.19,2.12,.50,.10,.13,.04);cyl(body,dark,s*.34,.5,0,.2,.22,.72);ell(body,dark,s*.63,1.6,0,.19,.55,.22);}con(body,0x48537a,0,2.67,0,.6,.56);gem(body,0x75eeec,0,1.25,.53,.23);}
  else{ell(body,base,0,1.35,0,.75,.9,.68);ell(body,dark,0,2.22,.3,.53,.54,.5);for(let s of [-1,1]){con(body,0xffdfa3,s*.45,2.76,0,.22,.78);ell(body,0x3c2757,s*.2,2.27,.79,.11,.15,.04);con(body,dark,s*1.13,1.36,-.1,.35,1.22,3).rotation.z=s*.7;}}
  const ring=put(root,new THREE.RingGeometry(.86,1.12,28),new THREE.MeshBasicMaterial({color:base,transparent:true,opacity:.29,side:THREE.DoubleSide,depthWrite:false}),0,.05,0);ring.rotation.x=-Math.PI/2;
  const state={root,body,kind,level,ring,dead:false,hurt:0};root.userData.monster=state;return state;
 }
-function animateMonster(m,time,dt){if(!m||m.dead)return;m.hurt=Math.max(0,m.hurt-dt);m.body.position.y=Math.sin(time*2.5+m.level)*.09+(m.hurt?Math.sin(time*44)*.06:0);m.body.rotation.y=Math.sin(time*1.1+m.level)*.14;m.body.scale.set(m.hurt?1.14:1, m.hurt?.84:1,m.hurt?1.07:1);m.ring.rotation.z+=dt*.65;}
+function animateMonster(m,time,dt){if(!m||m.dead)return;m.hurt=Math.max(0,m.hurt-dt);m.body.position.y=Math.sin(time*2.5+m.level)*.09+(m.hurt?Math.sin(time*44)*.06:0);m.body.rotation.y=Math.sin(time*1.1+m.level)*.14;m.body.scale.set(m.hurt?1.14:1,m.hurt?.84:1,m.hurt?1.07:1);m.ring.rotation.z+=dt*.65;}
 
 return {createHero,createMonster,animateHero,animateMonster,appearanceOptions,createSword};
 })();
@@ -559,7 +709,7 @@ function show(id){$(id).classList.remove('hidden');}function hide(id){$(id).clas
 function toast(str,duration=2200){const el=$('float-toast');el.textContent=str;el.classList.add('show');clearTimeout(app.toastTimer);app.toastTimer=setTimeout(()=>el.classList.remove('show'),duration);}
 function tone(freq=520,seconds=.12,type='sine'){if(!app.save.settings.sound)return;try{const ac=app.audio||(app.audio=new (window.AudioContext||window.webkitAudioContext)());if(ac.state==='suspended')ac.resume();let o=ac.createOscillator(),g=ac.createGain();o.type=type;o.frequency.setValueAtTime(freq,ac.currentTime);o.frequency.exponentialRampToValueAtTime(freq*.65,ac.currentTime+seconds);g.gain.setValueAtTime(.035,ac.currentTime);g.gain.exponentialRampToValueAtTime(.001,ac.currentTime+seconds);o.connect(g).connect(ac.destination);o.start();o.stop(ac.currentTime+seconds)}catch(e){}}
 function save(){saveGame(app.save);updateHud();}
-function quality(){const s=app.save.settings;app.qualityDpr=s.quality==='low'?1:s.quality==='high'?Math.min(devicePixelRatio,1.8):Math.min(devicePixelRatio,1.35);app.renderer.setPixelRatio(app.qualityDpr);app.renderer.shadowMap.enabled=s.shadows && s.quality!=='low';app.sun.castShadow=app.renderer.shadowMap.enabled;document.body.classList.toggle('reduce-motion',s.reducedMotion);$('narrator-lobby').classList.toggle('narrator-static',!s.narratorMotion||s.reducedMotion);document.querySelectorAll('.portrait-live').forEach(e=>e.classList.toggle('narrator-static',!s.narratorMotion||s.reducedMotion));resize();}
+function quality(){const s=app.save.settings;app.qualityDpr=s.quality==='low'?1:s.quality==='high'?Math.min(devicePixelRatio,2):Math.min(devicePixelRatio,isMobile()?1.35:1.6);app.renderer.setPixelRatio(app.qualityDpr);app.renderer.shadowMap.enabled=s.shadows && s.quality!=='low';app.sun.castShadow=app.renderer.shadowMap.enabled;document.body.classList.toggle('reduce-motion',s.reducedMotion);$('narrator-lobby').classList.toggle('narrator-static',!s.narratorMotion||s.reducedMotion);document.querySelectorAll('.portrait-live').forEach(e=>e.classList.toggle('narrator-static',!s.narratorMotion||s.reducedMotion));resize();}
 function updateHud(){const s=app.save;let effective=Math.min(s.level,20);$('hud-name').textContent=s.name;$('hud-lvl').textContent=s.level>=21?'MAX':s.level;$('hud-coins').textContent=fmt(s.coins);$('hud-xp').textContent=fmt(s.xp)+' XP';$('xpbar').style.width=(s.xp%150)/150*100+'%';let region=REGIONS.find(r=>r.id===s.region)||REGIONS[0];$('hud-region').textContent=region.emoji+' '+region.name;$('hud-stage').textContent=s.level===21?'Semua monster kalah':'Tantangan Lv.'+s.level+' / 20';
  let lvl=LEVELS_DATA.levels.find(l=>l.level===s.level);$('quest-title').textContent=app.training?'TUTORIAL':s.level===21?'👑 PETUALANG LEGENDARIS':lvl?'⚔ '+lvl.monsterName:'Quest';$('quest-desc').textContent=app.training?'Kalahkan Slime Latihan!':s.level===21?'Kamu menamatkan 20 level!':`Jawab ${lvl.requiredCorrectHits} soal untuk menang • ${fmt(lvl.rewardCoins)} koin`;
  let total=app.training?1:lvl?.requiredCorrectHits||0;let hit=app.training?0:s.hit;$('monster-segments').innerHTML=Array.from({length:total},(_,i)=>`<i class="${i<hit?'empty':''}"></i>`).join('');}
@@ -568,13 +718,13 @@ function isMobile(){return matchMedia('(pointer:coarse)').matches||/Android|iPho
 function orientationPrompt(){if(isMobile()&&innerHeight>innerWidth&&['creator','play','dialog','battle'].includes(app.phase)&&!app.allowPortrait)show('rotate-overlay');else hide('rotate-overlay');}
 async function requestLandscape(){app.allowPortrait=false;try{if(!document.fullscreenElement && $('game').requestFullscreen)await $('game').requestFullscreen();}catch(e){}try{if(screen.orientation?.lock)await screen.orientation.lock('landscape');}catch(e){}orientationPrompt();}
 function initRenderer(){const canvas=$('render-canvas');let test=canvas.getContext('webgl2',{alpha:false,antialias:true});if(!test)throw Error('WebGL2 tidak tersedia. Coba aktifkan akselerasi perangkat keras pada browser.');
- app.renderer=new THREE.WebGLRenderer({canvas,context:test,antialias:true,alpha:false,powerPreference:'high-performance'});app.renderer.setPixelRatio(Math.min(devicePixelRatio,1.35));app.renderer.setSize(innerWidth,innerHeight,false);app.renderer.outputColorSpace=THREE.SRGBColorSpace;app.renderer.toneMapping=THREE.ACESFilmicToneMapping;app.renderer.toneMappingExposure=1.37;app.renderer.shadowMap.enabled=true;app.renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+ app.renderer=new THREE.WebGLRenderer({canvas,context:test,antialias:true,alpha:false,powerPreference:'high-performance'});app.renderer.setPixelRatio(Math.min(devicePixelRatio,1.35));app.renderer.setSize(innerWidth,innerHeight,false);app.renderer.outputColorSpace=THREE.SRGBColorSpace;app.renderer.toneMapping=THREE.ACESFilmicToneMapping;app.renderer.toneMappingExposure=1.28;app.renderer.shadowMap.enabled=true;app.renderer.shadowMap.type=THREE.PCFSoftShadowMap;
  app.scene=new THREE.Scene();app.scene.background=new THREE.Color(0x9ecde3);app.scene.fog=new THREE.Fog(0xa6dce4,34,78);
- app.scene.add(new THREE.HemisphereLight(0xc9e8ff,0x7b6a64,2.05));const sun=new THREE.DirectionalLight(0xffe7bb,2.8);sun.position.set(-10,26,15);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);sun.shadow.camera.left=-38;sun.shadow.camera.right=38;sun.shadow.camera.top=38;sun.shadow.camera.bottom=-38;sun.shadow.bias=-.00025;app.scene.add(sun);app.sun=sun;
+ app.scene.add(new THREE.HemisphereLight(0xc9e8ff,0x7b6a64,2.05));const sun=new THREE.DirectionalLight(0xffe7bb,2.8);sun.position.set(-10,26,15);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);sun.shadow.camera.left=-38;sun.shadow.camera.right=38;sun.shadow.camera.top=38;sun.shadow.camera.bottom=-38;sun.shadow.bias=-.00025;app.scene.add(sun);app.sun=sun;const fill=new THREE.DirectionalLight(0x98c6ff,1.05);fill.position.set(8,9,-10);app.scene.add(fill);
  app.camera=new THREE.OrthographicCamera(-17,17,10,-10,.1,180);app.camera.position.set(16,22,25);app.camera.lookAt(0,0,0);
- app.previewScene=new THREE.Scene();app.previewScene.background=new THREE.Color(0x4b7490);app.previewScene.add(new THREE.HemisphereLight(0xcdeeff,0x5b4066,2));const light=new THREE.DirectionalLight(0xffecc9,3.8);light.position.set(3,8,6);app.previewScene.add(light);
- const pedestal=new THREE.Mesh(new THREE.CylinderGeometry(1.6,1.75,.34,40),new THREE.MeshStandardMaterial({color:0xd9bb86,metalness:.42,roughness:.31}));pedestal.position.y=-.19;app.previewScene.add(pedestal);const ring=new THREE.Mesh(new THREE.TorusGeometry(1.54,.05,8,48),new THREE.MeshStandardMaterial({color:0x96e4ff,emissive:0x1a89e9,emissiveIntensity:1.4}));ring.rotation.x=-Math.PI/2;ring.position.y=.0;app.previewScene.add(ring);const studioGlow=new THREE.PointLight(0x8bccff,18,9);studioGlow.position.set(-2,3,2);app.previewScene.add(studioGlow);
- app.previewCamera=new THREE.PerspectiveCamera(35,1,.1,100);app.previewCamera.position.set(2.8,2.3,5.2);app.previewCamera.lookAt(0,1.5,0);
+ app.previewScene=new THREE.Scene();app.previewScene.background=new THREE.Color(0x557a97);app.previewScene.add(new THREE.HemisphereLight(0xd6efff,0x5c4a75,2.35));const light=new THREE.DirectionalLight(0xfff0d4,4.2);light.position.set(3,9,6);app.previewScene.add(light);const rim=new THREE.PointLight(0x87dcff,14,11);rim.position.set(-3,3.6,2.2);app.previewScene.add(rim);const warm=new THREE.PointLight(0xffc180,7,10);warm.position.set(2.4,1.8,4.4);app.previewScene.add(warm);
+ const pedestal=new THREE.Mesh(new THREE.CylinderGeometry(1.7,1.95,.38,44),new THREE.MeshStandardMaterial({color:0xe0c89b,metalness:.36,roughness:.28}));pedestal.position.y=-.22;app.previewScene.add(pedestal);const ring=new THREE.Mesh(new THREE.TorusGeometry(1.62,.055,10,64),new THREE.MeshStandardMaterial({color:0x96e4ff,emissive:0x1a89e9,emissiveIntensity:1.6}));ring.rotation.x=-Math.PI/2;ring.position.y=.01;app.previewScene.add(ring);
+ app.previewCamera=new THREE.PerspectiveCamera(32,1,.1,100);app.previewCamera.position.set(2.2,2.36,4.55);app.previewCamera.lookAt(0,1.92,0);
  quality();}
 function regionColors(region){return {village:[0xb7dcf1,0xc8e7de],forest:[0xadd9d0,0xa7d7be],cave:[0x687eaa,0x647a95],tower:[0xcac9dd,0xb5c6d0],castle:[0x98a7c3,0xbfc1d4]}[region]||[0xaed8e9,0xbfe5eb];}
 
@@ -585,12 +735,17 @@ const villagePeople=[
  {name:'Arka · Penjaga Guild',x:-6,z:-12,clothes:5,hair:3,gender:'male',hint:'Modal adalah uang atau barang yang digunakan memulai usaha.',seed:9},
  {name:'Naya · Kurir',x:8,z:0,clothes:3,hair:4,gender:'female',hint:'Jika membeli stok, catat jumlah barang masuk agar persediaan tetap tepat.',seed:12},
  {name:'Bima · Ksatria',x:10,z:18,clothes:0,hair:1,gender:'male',hint:'Potongan harga disebut diskon. Selalu hitung harga akhir setelah diskon.',seed:14},
- {name:'Sena · Pembuat Peta',x:-7,z:20,clothes:2,hair:5,gender:'male',hint:'Laporan laba-rugi membandingkan pendapatan dan beban usaha.',seed:16}
+ {name:'Sena · Pembuat Peta',x:-7,z:20,clothes:2,hair:5,gender:'male',hint:'Laporan laba-rugi membandingkan pendapatan dan beban usaha.',seed:16},
+ {name:'Dina · Penjual Buah',x:16,z:7,clothes:1,hair:0,gender:'female',hint:'Pendapatan adalah uang yang diperoleh dari penjualan barang dan jasa.',seed:19},
+ {name:'Aldo · Penjaga Kas',x:-1,z:20,clothes:0,hair:2,gender:'male',hint:'Saldo akhir kas dihitung dari saldo awal ditambah pemasukan dikurangi pengeluaran.',seed:22},
+ {name:'Luna · Peracik',x:21,z:5,clothes:3,hair:1,gender:'female',hint:'Biaya bahan baku harus dihitung agar harga jual tidak merugikan.',seed:25},
+ {name:'Faris · Kurir Stok',x:-18,z:-3,clothes:5,hair:4,gender:'male',hint:'Persediaan barang harus dicatat saat datang dan saat terjual.',seed:28},
+ {name:'Zahra · Bendahara',x:5,z:-17,clothes:1,hair:5,gender:'female',hint:'Laporan keuangan membantu bos mengambil keputusan usaha.',seed:31}
 ];
 function npcName(root,name){const cv=document.createElement('canvas');cv.width=512;cv.height=90;const c=cv.getContext('2d');c.fillStyle='rgba(19,33,63,.82)';c.beginPath();c.roundRect(2,7,508,72,21);c.fill();c.strokeStyle='#ebc37a';c.lineWidth=4;c.stroke();c.font='bold 30px system-ui';c.fillStyle='#fff3d8';c.textAlign='center';c.textBaseline='middle';c.fillText(name,256,46,480);const t=new THREE.CanvasTexture(cv);const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:t,transparent:true,depthWrite:false}));sp.position.set(0,3.46,0);sp.scale.set(3.4,.57,1);root.add(sp);}
 function clearVillagers(){for(const npc of app.npcs){removeRoot(npc.hero.root);}app.npcs=[];}
 function createVillagers(region){clearVillagers();const data=region==='village'?villagePeople:[{name:'Penjelajah Guild',x:-4,z:9,clothes:1,hair:0,gender:'female',hint:'Jawaban benar membuat pedang menyerang dan kamu mendapatkan koin!',seed:3},{name:'Ksatria Neraca',x:14,z:9,clothes:0,hair:3,gender:'male',hint:'Teruslah belajar untuk mencapai kastil terakhir.',seed:5}];
- for(const npc of ((isMobile() && region==='village') ? data.filter((_,i)=>i%2===0) : data)){const hero=createHero({gender:npc.gender,hair:npc.hair,outfit:npc.clothes,skin:0xe9b58c,hairColor:[0x795037,0x292638,0xa36448][npc.seed%3]});hero.root.position.set(npc.x,0,npc.z);hero.root.scale.setScalar(.79);if(npc.seed%3)hero.equip('basic');hero.root.rotation.y=Math.PI*.24;npcName(hero.root,npc.name.split(' · ')[0]);app.scene.add(hero.root);const state={...npc,hero,homeX:npc.x,homeZ:npc.z,phase:npc.seed*.87,speed:.33+npc.seed%3*.13};app.npcs.push(state);app.world.interactables.push({type:'npc',x:npc.x,z:npc.z,npc:state,label:npc.name});}}
+ for(const npc of ((isMobile() && region==='village') ? data.filter((_,i)=>i%3===0) : data)){const hero=createHero({gender:npc.gender,hair:npc.hair,outfit:npc.clothes,skin:0xe9b58c,hairColor:[0x795037,0x292638,0xa36448][npc.seed%3]});hero.root.position.set(npc.x,0,npc.z);hero.root.scale.setScalar(.79);if(npc.seed%3)hero.equip('basic');hero.root.rotation.y=Math.PI*.24;npcName(hero.root,npc.name.split(' · ')[0]);app.scene.add(hero.root);const state={...npc,hero,homeX:npc.x,homeZ:npc.z,phase:npc.seed*.87,speed:.33+npc.seed%3*.13};app.npcs.push(state);app.world.interactables.push({type:'npc',x:npc.x,z:npc.z,npc:state,label:npc.name});}}
 function updateVillagers(time,dt){for(const npc of app.npcs){const h=npc.hero,amp=npc.seed%2?1.1:.63;
  const tx=npc.homeX+Math.sin(time*npc.speed+npc.phase)*amp, tz=npc.homeZ+Math.cos(time*npc.speed*.83+npc.phase)*amp;
  const dx=tx-h.root.position.x,dz=tz-h.root.position.z;const d=Math.hypot(dx,dz);
@@ -599,7 +754,25 @@ function updateVillagers(time,dt){for(const npc of app.npcs){const h=npc.hero,am
  const t=app.world.interactables.find(v=>v.npc===npc);if(t){t.x=h.root.position.x;t.z=h.root.position.z;}
 }}
 function removeRoot(root){if(root&&root.parent)root.parent.remove(root);}
-function buildWorld(region='village',keepPos=false){let old=app.hero?.root.position.clone()||new THREE.Vector3(0,0,12);removeRoot(app.world?.root);removeRoot(app.hero?.root);removeRoot(app.monster?.root);removeRoot(app.mentor?.root);clearVillagers();app.world=createWorld(region,app.save.guild);app.scene.add(app.world.root);let [sky,fog]=regionColors(region);app.scene.background=new THREE.Color(sky);app.scene.fog.color.setHex(fog);
+function createAmbientWorld(region){
+ app.ambientParticles=[];
+ const count=isMobile()?10:28;
+ const colors=region==='cave'?[0x91eaff,0xb48aff]:region==='castle'?[0xffa6d3,0xffd28d]:[0xffe6a5,0xc8f5e6,0x95d9ff];
+ for(let i=0;i<count;i++){
+  const seed=i*2.3999632;
+  const centerX=Math.sin(seed)*((i%4)+1)*5.1,centerZ=Math.cos(seed*1.2)*((i%5)+1)*3.8;
+  const mat=new THREE.MeshBasicMaterial({color:colors[i%colors.length],transparent:true,opacity:.38+(i%3)*.12,blending:THREE.AdditiveBlending,depthWrite:false});
+  const orb=new THREE.Mesh(new THREE.OctahedronGeometry(.045+(i%3)*.026,0),mat);
+  orb.position.set(centerX,1.8+(i%4)*.46,centerZ);
+  app.world.root.add(orb);
+  app.ambientParticles.push({orb,x:centerX,y:orb.position.y,z:centerZ,phase:seed,speed:.36+(i%5)*.13});
+ }
+}
+function animateAmbientWorld(t){for(const p of app.ambientParticles){
+ p.orb.position.set(p.x+Math.sin(t*p.speed+p.phase)*.7,p.y+Math.sin(t*1.2+p.phase)*.29,p.z+Math.cos(t*p.speed*.7+p.phase)*.55);
+ p.orb.material.opacity=.22+.33*(.5+.5*Math.sin(t*2.1+p.phase));
+}}
+function buildWorld(region='village',keepPos=false){let old=app.hero?.root.position.clone()||new THREE.Vector3(0,0,12);removeRoot(app.world?.root);removeRoot(app.hero?.root);removeRoot(app.monster?.root);removeRoot(app.mentor?.root);clearVillagers();app.world=createWorld(region,app.save.guild);app.scene.add(app.world.root);createAmbientWorld(region);let [sky,fog]=regionColors(region);app.scene.background=new THREE.Color(sky);app.scene.fog.color.setHex(fog);
  app.hero=createHero(app.save.appearance);app.hero.root.position.set(keepPos?old.x:app.world.spawn.x,0,keepPos?old.z:app.world.spawn.z);app.scene.add(app.hero.root);app.hero.equip(app.save.equipped);
  if(region==='village'){app.mentor=createHero({gender:'female',hair:2,hairColor:0x76462f,skin:0xe9ad87,outfit:1});app.mentor.root.position.set(3,0,11);app.mentor.root.rotation.y=-.6;app.mentor.root.scale.setScalar(.88);app.scene.add(app.mentor.root);app.world.interactables.push({type:'mentor',x:3,z:11,label:'Pemandu Desa'});}else app.mentor=null;
  createVillagers(region);spawnMonster();updateHud();}
@@ -610,7 +783,27 @@ function heroPreview(){const a=app.save.appearance;removeRoot(app.previewHero?.r
 function resize(){if(!app.renderer)return;const isCreator=app.phase==='creator';let container=isCreator?$('preview-zone'):$('game');let w=Math.max(1,container.clientWidth||innerWidth),h=Math.max(1,container.clientHeight||innerHeight);app.renderer.setSize(w,h,false);app.camera.left=-12*w/h;app.camera.right=12*w/h;app.camera.top=12;app.camera.bottom=-12;app.camera.updateProjectionMatrix();app.previewCamera.aspect=w/h;app.previewCamera.updateProjectionMatrix();}
 function attachCanvas(toPreview){const canvas=$('render-canvas');(toPreview?$('preview-zone'):$('game')).prepend(canvas);canvas.classList.toggle('in-preview',toPreview);resize();}
 function creator(){app.phase='creator';setInterface(false);hide('lobby');show('creator');app.save.appearance={...newSave().appearance,...app.save.appearance};fillCreator();attachCanvas(true);setTimeout(resize,30);orientationPrompt();}
-function fillCreator(){const a=app.save.appearance;$('player-name').value=app.save.name==='Petualang'?'':app.save.name;document.querySelectorAll('[data-gender]').forEach(b=>b.classList.toggle('active',b.dataset.gender===a.gender));$('hair-select').innerHTML=Array.from({length:6},(_,i)=>`<button data-hair="${i}" class="${a.hair===i?'active':''}" aria-label="Model rambut ${i+1}">✂️ ${i+1}</button>`).join('');
+
+// V5 original miniature previews: visual choices depict hairstyles and swords, rather than scissors/emoji.
+function svgHairThumbnail(i,gender,color){
+ const hex='#'+Number(color).toString(16).padStart(6,'0');
+ const contours=[
+  'M15 31 Q12 9 32 12 Q54 8 52 34 L45 26 Q30 18 19 27Z',
+  'M12 35 Q6 10 31 12 Q57 3 54 28 Q42 21 36 31 L22 25Z',
+  'M10 26 Q16 5 34 12 Q50 6 54 24 L50 40 Q40 33 32 23 L18 37Z',
+  'M11 38 Q10 13 30 10 Q54 11 54 35 L44 46 Q47 21 30 24 Q16 23 18 46Z',
+  'M15 27 Q19 8 34 9 Q50 9 54 29 L43 31 Q41 23 34 24 L20 37Z',
+  'M12 32 Q12 13 31 9 Q56 11 56 33 L51 43 L44 28 Q32 19 16 41Z'];
+ const extras=i===2?'<ellipse cx="49" cy="19" rx="10" ry="9"/>':i===4?'<circle cx="34" cy="7" r="9"/>':i===5?'<path d="M10 28 Q2 45 15 56 M53 27 Q61 43 51 57" fill="none" stroke-width="8" stroke-linecap="round"/>':'';
+ return `<svg viewBox="0 0 68 68" aria-hidden="true" class="style-thumbnail"><defs><linearGradient id="hh${i}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".3"/><stop offset=".45" stop-color="${hex}"/><stop offset="1" stop-color="#192137" stop-opacity=".5"/></linearGradient></defs><ellipse cx="34" cy="57" rx="22" ry="9" fill="#496a9a"/><rect x="24" y="42" width="20" height="17" rx="7" fill="#d8a879"/><ellipse cx="34" cy="37" rx="18" ry="20" fill="#ffd5b3"/><g fill="${hex}" stroke="#27344a" stroke-width="1.2"><path d="${contours[i]}"/>${extras}</g><path d="M26 37 Q28 35 30 37 M38 37 Q40 35 42 37" fill="none" stroke="#4d3444" stroke-width="2.5" stroke-linecap="round"/><path d="M31 46 Q34 48 37 46" fill="none" stroke="#b76a70" stroke-width="1.7"/></svg>`;
+}
+function swordIconSvg(i){
+ const colors=['#d7edff','#ff763c','#77eeff','#ffe27b','#ac87ff','#ffd176','#ff656c','#9fa9ff'];
+ const c=colors[i]||colors[0];const id='w'+i;
+ const ornaments=['✦','♨','❅','ϟ','☾','✧','♛','✦'];
+ return `<svg viewBox="0 0 100 112" aria-hidden="true" class="sword-mini sword-${i}"><defs><linearGradient id="edge${id}" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff"/><stop offset=".48" stop-color="${c}"/><stop offset="1" stop-color="#182c50"/></linearGradient><filter id="aura${id}"><feGaussianBlur stdDeviation="4.1"/></filter></defs><path d="M49 87 L35 32 L51 8 L66 32 L55 87" fill="${c}" opacity=".6" filter="url(#aura${id})"/><path d="M49 83 L38 32 L51 8 L62 32 L55 83 Z" fill="url(#edge${id})" stroke="#f9eed0" stroke-width="2"/><path d="M49 24 L49 79" stroke="#ffffff" stroke-width="2" opacity=".8"/><path d="M25 79 Q40 69 50 78 Q64 69 77 79 L68 88 L58 84 L50 96 L42 84 L32 88Z" fill="#f0c16f" stroke="#4b3567" stroke-width="2"/><path d="M46 85 L54 85 L53 108 L47 108Z" fill="#61434d" stroke="#f0c16f" stroke-width="2"/><circle cx="50" cy="81" r="6" fill="${c}" stroke="#fff1cf" stroke-width="2"/><text x="50" y="62" font-size="18" text-anchor="middle" fill="#fff" opacity=".85">${ornaments[i]}</text></svg>`;
+}
+function fillCreator(){const a=app.save.appearance;$('player-name').value=app.save.name==='Petualang'?'':app.save.name;document.querySelectorAll('[data-gender]').forEach(b=>b.classList.toggle('active',b.dataset.gender===a.gender));$('hair-select').innerHTML=Array.from({length:6},(_,i)=>`<button data-hair="${i}" class="hair-style ${a.hair===i?'active':''}" aria-label="Model rambut ${i+1}">${svgHairThumbnail(i,a.gender,a.hairColor)}<span>Gaya ${i+1}</span></button>`).join('');
  const sw=(id,key,colors)=>{$(id).innerHTML=colors.map((c,i)=>`<button data-${key}="${i}" title="Warna ${i+1}" style="background:#${c.toString(16).padStart(6,'0')}" class="${(key==='haircolor'?a.hairColor:c===a.skin? '':undefined)}"></button>`).join('');};
  $('hair-color-select').innerHTML=appearanceOptions.hairs.map((c,i)=>`<button data-haircolor="${i}" aria-label="Warna rambut ${i+1}" style="background:#${c.toString(16).padStart(6,'0')}" class="${a.hairColor===c?'active':''}"></button>`).join('');
  $('skin-select').innerHTML=appearanceOptions.skins.map((c,i)=>`<button data-skin="${i}" aria-label="Warna kulit ${i+1}" style="background:#${c.toString(16).padStart(6,'0')}" class="${a.skin===c?'active':''}"></button>`).join('');
@@ -653,7 +846,15 @@ function answer(choice){if(app.phase!=='battle'||app.answered)return;const q=app
  setTimeout(()=>{hide('modal-backdrop');launchAttack();},app.save.settings.reducedMotion?160:750);
 }
 function launchAttack(){if(!app.monster)return;app.phase='attack';let kind=Math.floor(Math.random()*5);if(kind===app.lastType)kind=(kind+1+Math.floor(Math.random()*4))%5;app.lastType=kind;const hero=app.hero.root.position,mp=app.monster.root.position;app.hero.root.rotation.y=Math.atan2(mp.x-hero.x,mp.z-hero.z);app.attack={kind,t:0,duration:app.save.settings.reducedMotion?.48:1.25,hit:false,originalPos:hero.clone(),worldHitPosition:mp.clone(),defeated:false,lastTip:null};$('attack-banner').textContent=['⚡ QUICK SLASH!','✨ RISING SLASH!','🌀 SPIN SLASH!','💨 DASH STRIKE!','🌟 JUMP FINISHER!'][kind];show('attack-banner');$('attack-banner').classList.remove('pulse');void $('attack-banner').offsetWidth;$('attack-banner').classList.add('pulse');toast(['⚡ QUICK SLASH!','✨ RISING SLASH!','🌀 SPIN SLASH!','💨 DASH STRIKE!','🌟 JUMP FINISHER!'][kind],1100);tone(420,.24,'sawtooth');}
-function impact(){const a=app.attack;if(!a||a.hit)return;a.hit=true;const oldLvl=app.save.level;
+function showDamageCaption(){
+ const host=$('game'); if(!host)return;
+ const el=document.createElement('div');el.className='v5-hit-caption';
+ const total=app.training?1:(app.combatLevel?.requiredCorrectHits||1);
+ const progress=app.training?1:Math.min(total,app.save.hit+1);
+ el.innerHTML=`<span>TEBASAN BERHASIL!</span><strong>${progress} / ${total}</strong>`;
+ host.appendChild(el);setTimeout(()=>el.remove(),980);
+}
+function impact(){const a=app.attack;if(!a||a.hit)return;a.hit=true;a.hitPause=app.save.settings.reducedMotion?0:.065;showDamageCaption();const oldLvl=app.save.level;
  if(app.training){a.defeated=true;app.training=false;app.save.coins+=30;app.save.xp+=15;save();}else{const result=applyCorrectHit(app.save,app.combatLevel);a.defeated=result.defeated;save();}
  if(app.monster){app.monster.hurt=.44;}spawnMagicBurst(a.worldHitPosition,SWORDS.find(x=>x.id===app.save.equipped)?.glow||0x88e7ff);
  if(!app.save.settings.reducedMotion){$('flash').style.opacity='.37';setTimeout(()=>$('flash').style.opacity='0',90);}emitImpactParticles(a.worldHitPosition,SWORDS.find(x=>x.id===app.save.equipped)?.glow||0x97ddff);tone(140,.28,'triangle');updateHud();}
@@ -665,22 +866,23 @@ function attackFinish(){const a=app.attack;if(!a)return;hide('attack-banner');ap
   $('victory-next').onclick=()=>{closeModal(true);if(app.save.level===21){ending();return;}let target=LEVELS_DATA.levels[app.save.level-1].regionId;if(target!==app.save.region){showNarrator('Wilayah baru terbuka!','Portal menuju '+REGIONS.find(r=>r.id===target).name+' kini siap. Kamu boleh berkunjung dari menu Peta atau berjalan ke Portal!', 'NARATOR · WILAYAH BARU',()=>{closeNarrator();openMap();});}else {spawnMonster();toast('Monster berikutnya muncul!');}};
  }else{app.phase='battle';renderQuestion();}}
 function spawnMagicBurst(pos,color){
- const ringMat=new THREE.MeshBasicMaterial({color,transparent:true,opacity:.83,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide});
- for(let j=0;j<3;j++){
-  const ring=new THREE.Mesh(new THREE.TorusGeometry(.6+j*.34,.053,8,64),ringMat.clone());
+ const ringMat=new THREE.MeshBasicMaterial({color,transparent:true,opacity:.88,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide});
+ for(let j=0;j<4;j++){
+  const ring=new THREE.Mesh(new THREE.TorusGeometry(.52+j*.25,.048+j*.006,10,84),ringMat.clone());
   ring.rotation.x=j===1?0:Math.PI/2;ring.rotation.z=j*.55;
-  ring.position.set(pos.x,1.12+j*.23,pos.z);app.scene.add(ring);app.fx.push({mesh:ring,v:new THREE.Vector3(0,.08,0),life:.51+j*.13});
+  ring.position.set(pos.x,1.06+j*.20,pos.z);app.scene.add(ring);app.fx.push({mesh:ring,v:new THREE.Vector3(0,.12+j*.03,0),life:.58+j*.08});
  }
- // Luminous curved sword arc - radial beam along the enemy's forward plane.
- const arc=new THREE.Mesh(new THREE.RingGeometry(.9,1.6,40,1,-.4,Math.PI*1.65),ringMat.clone());arc.rotation.x=-.34;
- arc.position.set(pos.x,1.3,pos.z+.32);app.scene.add(arc);app.fx.push({mesh:arc,v:new THREE.Vector3(0,.7,0),life:.5});
+ const arc=new THREE.Mesh(new THREE.RingGeometry(.78,1.72,56,1,-.48,Math.PI*1.76),ringMat.clone());arc.rotation.x=-.34;
+ arc.position.set(pos.x,1.28,pos.z+.30);app.scene.add(arc);app.fx.push({mesh:arc,v:new THREE.Vector3(0,.9,0),life:.55});
+ const flash=new THREE.Mesh(new THREE.SphereGeometry(.22,12,12),new THREE.MeshBasicMaterial({color,transparent:true,opacity:.75,blending:THREE.AdditiveBlending,depthWrite:false}));
+ flash.position.set(pos.x,1.18,pos.z);app.scene.add(flash);app.fx.push({mesh:flash,v:new THREE.Vector3(0,.25,0),life:.32});
 }
-function emitImpactParticles(pos,color){const mat=new THREE.MeshBasicMaterial({color,transparent:true,opacity:.95});for(let i=0;i<22;i++){let p=new THREE.Mesh(new THREE.IcosahedronGeometry(.08+Math.random()*.12,0),mat.clone());p.position.set(pos.x,1.2,pos.z);app.scene.add(p);app.fx.push({mesh:p,v:new THREE.Vector3((Math.random()-.5)*8,Math.random()*4+2,(Math.random()-.5)*8),life:.85});}}
+function emitImpactParticles(pos,color){const mat=new THREE.MeshBasicMaterial({color,transparent:true,opacity:.95,blending:THREE.AdditiveBlending,depthWrite:false});for(let i=0;i<30;i++){let p=new THREE.Mesh(i%3?new THREE.IcosahedronGeometry(.06+Math.random()*.10,0):new THREE.OctahedronGeometry(.08+Math.random()*.06,0),mat.clone());p.position.set(pos.x,1.2,pos.z);app.scene.add(p);app.fx.push({mesh:p,v:new THREE.Vector3((Math.random()-.5)*9,Math.random()*4.8+2.3,(Math.random()-.5)*9),life:.92});}}
 function disposeShopPreview(){if(app.shopPreview){app.shopPreview.renderer.dispose();app.shopPreview.renderer.domElement.remove();app.shopPreview=null;}}
 function openModal(title,eyebrow='GUILD AKUNTANSI',locked=false){disposeShopPreview();if(app.phase==='lobby')app.menuReturn='lobby';app.currentPanel=locked?'battle':'menu';if(!locked)app.phase='menu';$('modal-title').textContent=title;$('modal-eyebrow').textContent=eyebrow;show('modal-backdrop');app.keys={};clearJoy();}
 function closeModal(force=false){if(app.currentPanel==='battle'&&!force)return;disposeShopPreview();hide('modal-backdrop');app.phase='play';app.currentPanel=null;updateHud();if(app.menuReturn==='lobby'){app.menuReturn=null;lobby();}}
 function openShop(){if(app.phase!=='play'&&app.phase!=='menu')return;openModal('⚔ Toko Pedang Legenda','8 MODEL PEDANG 3D');refreshShop();}
-function refreshShop(){$('modal-body').innerHTML=`<div class="panel-note">Koinmu: <b>🪙 ${fmt(app.save.coins)}</b>. Skin pedang bersifat kosmetik. Setiap pedang terlihat berbeda pada karakter dan serangan.</div><div id="shop-showroom" class="shop-showroom" aria-label="Model pedang tiga dimensi"></div><div class="card-grid">${SWORDS.map((w,i)=>{const owned=app.save.owned.includes(w.id),equipped=app.save.equipped===w.id;return `<div class="shop-card ${equipped?'selected':''}" data-preview="${w.id}"><div class="weapon-art" style="--glow:#${w.glow.toString(16)}">${['🗡️','🔥','❄️','⚡','🌑','⚔️','🐉','🌌'][i]}</div><b>${w.name}</b><small>${w.description}</small><small>${owned?'✓ Dimiliki':'🪙 '+fmt(w.cost)}</small><button data-buy="${w.id}" ${equipped?'disabled':''}>${equipped?'DIPAKAI':owned?'PAKAI':'BELI'}</button></div>`}).join('')}</div>`;
+function refreshShop(){$('modal-body').innerHTML=`<div class="panel-note">Koinmu: <b>🪙 ${fmt(app.save.coins)}</b>. Skin pedang bersifat kosmetik. Setiap pedang terlihat berbeda pada karakter dan serangan.</div><div id="shop-showroom" class="shop-showroom" aria-label="Model pedang tiga dimensi"></div><div class="card-grid">${SWORDS.map((w,i)=>{const owned=app.save.owned.includes(w.id),equipped=app.save.equipped===w.id;return `<div class="shop-card ${equipped?'selected':''}" data-preview="${w.id}"><div class="weapon-art" style="--glow:#${w.glow.toString(16)}">${swordIconSvg(i)}</div><b>${w.name}</b><small>${w.description}</small><small>${owned?'✓ Dimiliki':'🪙 '+fmt(w.cost)}</small><button data-buy="${w.id}" ${equipped?'disabled':''}>${equipped?'DIPAKAI':owned?'PAKAI':'BELI'}</button></div>`}).join('')}</div>`;
  document.querySelectorAll('[data-buy]').forEach(b=>b.onclick=e=>{e.stopPropagation();const result=purchaseSword(app.save,b.dataset.buy);if(result.ok){save();app.hero.equip(app.save.equipped);tone(850,.16);refreshShop();}toast(result.message);});document.querySelectorAll('[data-preview]').forEach(card=>card.onclick=()=>setSwordPreview(card.dataset.preview));initShopPreview();}
 function initShopPreview(){try{disposeShopPreview();const zone=$('shop-showroom');if(!zone)return;const r=new THREE.WebGLRenderer({antialias:true,alpha:true,powerPreference:'low-power'});r.setPixelRatio(Math.min(devicePixelRatio,1.3));r.setSize(zone.clientWidth||450,zone.clientHeight||170,false);r.outputColorSpace=THREE.SRGBColorSpace;zone.appendChild(r.domElement);const scene=new THREE.Scene();scene.add(new THREE.HemisphereLight(0xc9f2ff,0x392755,2.6));const sun=new THREE.DirectionalLight(0xffe5ad,3.4);sun.position.set(2,6,5);scene.add(sun);const platform=new THREE.Mesh(new THREE.CylinderGeometry(.88,1,.18,14),new THREE.MeshStandardMaterial({color:0xcdb791,metalness:.4,roughness:.4}));platform.position.y=-.12;scene.add(platform);const camera=new THREE.PerspectiveCamera(38,(zone.clientWidth||450)/(zone.clientHeight||170),.1,50);camera.position.set(3.2,2,5.5);camera.lookAt(0,.72,0);app.shopPreview={renderer:r,scene,camera,zone,weapon:null};setSwordPreview(app.save.equipped);}catch(err){console.warn('Preview 3D tak tersedia:',err);}}
 function setSwordPreview(id){const p=app.shopPreview;if(!p)return;if(p.weapon)p.scene.remove(p.weapon);p.weapon=createSword(id);p.weapon.scale.setScalar(1.25);p.weapon.position.y=.2;p.scene.add(p.weapon);document.querySelectorAll('[data-preview]').forEach(el=>el.classList.toggle('selected',el.dataset.preview===id));const n=SWORDS.find(w=>w.id===id);$('shop-showroom').title='Preview pedang 3D: '+(n?.name||id);}
@@ -724,13 +926,13 @@ function tickMovement(dt){
  const aim=Math.atan2(app.velocity.x,app.velocity.z);let diff=Math.atan2(Math.sin(aim-hero.rotation.y),Math.cos(aim-hero.rotation.y));hero.rotation.y+=diff*(1-Math.exp(-dt*9));
 }
 function updateEffects(dt){for(let i=app.fx.length-1;i>=0;i--){const e=app.fx[i];e.life-=dt;e.v.y-=dt*10;e.mesh.position.addScaledVector(e.v,dt);e.mesh.material.opacity=Math.max(0,Math.min(.95,e.life/.6));e.mesh.scale.setScalar(Math.max(.1,e.life));if(e.life<=0){removeRoot(e.mesh);e.mesh.geometry.dispose();e.mesh.material.dispose();app.fx.splice(i,1);}}}
-function updateAttack(dt){let a=app.attack;if(!a)return;a.t+=dt/a.duration;const p=Math.min(1,a.t);if(p>=.54&&!a.hit)impact();if(app.monster?.root){const mp=app.monster.root.position;app.hero.root.rotation.y=Math.atan2(mp.x-app.hero.root.position.x,mp.z-app.hero.root.position.z);}if(!a.hit&&p>.12&&p<.50){const from=a.originalPos,to=a.worldHitPosition;const forward=new THREE.Vector3(to.x-from.x,0,to.z-from.z).normalize();app.hero.root.position.copy(from).addScaledVector(forward,Math.sin(((p-.12)/.38)*Math.PI/2)*Math.min(1.5,from.distanceTo(to)*.3));}if(p>=1)attackFinish();}
+function updateAttack(dt){let a=app.attack;if(!a)return;if(a.hitPause>0){a.hitPause-=dt;return;}a.t+=dt/a.duration;const p=Math.min(1,a.t);if(p>=.54&&!a.hit)impact();if(app.monster?.root){const mp=app.monster.root.position;app.hero.root.rotation.y=Math.atan2(mp.x-app.hero.root.position.x,mp.z-app.hero.root.position.z);}if(!a.hit&&p>.12&&p<.50){const from=a.originalPos,to=a.worldHitPosition;const forward=new THREE.Vector3(to.x-from.x,0,to.z-from.z).normalize();app.hero.root.position.copy(from).addScaledVector(forward,Math.sin(((p-.12)/.38)*Math.PI/2)*Math.min(1.5,from.distanceTo(to)*.3));}if(p>=1)attackFinish();}
 function swordTrail(){let a=app.attack;if(!a||a.t<.13||a.t>.84)return;const sword=app.hero.swordMount.children[0];if(!sword)return;
  app.hero.root.updateMatrixWorld(true);const tip=sword.localToWorld(new THREE.Vector3(0,1.35,0));let prev=a.lastTip?.clone();a.lastTip=tip.clone();if(!prev)return;
- const color=SWORDS.find(w=>w.id===app.save.equipped)?.glow||0x80eaff;const diff=prev.distanceTo(tip);if(diff>.01&&diff<4){const radius=.09+Math.sin(a.t*Math.PI)*.12;const curve=new THREE.LineCurve3(prev,tip);const geo=new THREE.TubeGeometry(curve,3,radius,5,false),m=new THREE.MeshBasicMaterial({color,transparent:true,opacity:.92,depthWrite:false,blending:THREE.AdditiveBlending});const beam=new THREE.Mesh(geo,m);app.scene.add(beam);app.fx.push({mesh:beam,v:new THREE.Vector3(0,.12,0),life:.46});}
- if(app.save.settings.quality!=='low'&&Math.random()<.7){const geo=new THREE.OctahedronGeometry(.05+Math.random()*.06),m=new THREE.MeshBasicMaterial({color,transparent:true,opacity:.82,blending:THREE.AdditiveBlending,depthWrite:false});const dot=new THREE.Mesh(geo,m);dot.position.copy(tip);app.scene.add(dot);app.fx.push({mesh:dot,v:new THREE.Vector3((Math.random()-.5)*.9,Math.random(),(Math.random()-.5)*.9),life:.52});}}
+ const color=SWORDS.find(w=>w.id===app.save.equipped)?.glow||0x80eaff;const diff=prev.distanceTo(tip);if(diff>.01&&diff<4){const radius=.10+Math.sin(a.t*Math.PI)*.15;const curve=new THREE.LineCurve3(prev,tip);const geo=new THREE.TubeGeometry(curve,4,radius,8,false),m=new THREE.MeshBasicMaterial({color,transparent:true,opacity:.96,depthWrite:false,blending:THREE.AdditiveBlending});const beam=new THREE.Mesh(geo,m);app.scene.add(beam);app.fx.push({mesh:beam,v:new THREE.Vector3(0,.15,0),life:.50});if(Math.random()<.8){const slash=new THREE.Mesh(new THREE.PlaneGeometry(.32,.95),new THREE.MeshBasicMaterial({color,transparent:true,opacity:.26,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide}));slash.position.copy(tip);slash.lookAt(prev);app.scene.add(slash);app.fx.push({mesh:slash,v:new THREE.Vector3(0,.18,0),life:.28});}}
+ if(app.save.settings.quality!=='low'&&Math.random()<.9){const geo=Math.random()<.5?new THREE.OctahedronGeometry(.05+Math.random()*.06):new THREE.TetrahedronGeometry(.05+Math.random()*.05);const m=new THREE.MeshBasicMaterial({color,transparent:true,opacity:.86,blending:THREE.AdditiveBlending,depthWrite:false});const dot=new THREE.Mesh(geo,m);dot.position.copy(tip);app.scene.add(dot);app.fx.push({mesh:dot,v:new THREE.Vector3((Math.random()-.5)*1.2,Math.random()*1.3,(Math.random()-.5)*1.2),life:.56});}}
 function animate(){requestAnimationFrame(animate);if(!app.renderer)return;let dt=Math.min(.047,app.clock.getDelta());app.time+=dt;let t=app.time;
- if(app.phase==='creator'){if(app.previewHero){animateHero(app.previewHero,t,dt,false);app.previewHero.root.rotation.y+=dt*.16;}app.renderer.render(app.previewScene,app.previewCamera);return;}
+ if(app.phase==='creator'){if(app.previewHero){animateHero(app.previewHero,t,dt,false);app.previewHero.root.rotation.y+=dt*.115;}app.renderer.render(app.previewScene,app.previewCamera);return;}
  if(app.hero){if(app.phase==='play')tickMovement(dt);
   if(app.attack)updateAttack(dt);
   animateHero(app.hero,t,dt,app.moving&&app.phase==='play',app.attack?{kind:app.attack.kind,t:app.attack.t}:null);
@@ -740,7 +942,7 @@ function animate(){requestAnimationFrame(animate);if(!app.renderer)return;let dt
   if(app.phase==='lobby'){let goal=new THREE.Vector3(20+Math.sin(t*.2)*2,27,30);app.camera.position.lerp(goal,dt);app.camera.lookAt(0,0,0);}
   if(app.phase==='play'){let near=closest();app.near=near;if(near){$('nearby').textContent=(isMobile()?'AKSI':'E')+' · '+near.label;show('nearby');}else hide('nearby');}else hide('nearby');
  }
- updateEffects(dt);if(app.shopPreview){const p=app.shopPreview;const rect=p.zone.getBoundingClientRect();let w=Math.max(1,Math.floor(rect.width)),h=Math.max(1,Math.floor(rect.height));if(p.renderer.domElement.width!==Math.round(w*Math.min(devicePixelRatio,1.3)))p.renderer.setSize(w,h,false);p.camera.aspect=w/h;p.camera.updateProjectionMatrix();if(p.weapon)p.weapon.rotation.y+=dt*.85;p.renderer.render(p.scene,p.camera);}app.renderer.render(app.scene,app.camera);
+ updateEffects(dt);animateAmbientWorld(t);if(app.shopPreview){const p=app.shopPreview;const rect=p.zone.getBoundingClientRect();let w=Math.max(1,Math.floor(rect.width)),h=Math.max(1,Math.floor(rect.height));if(p.renderer.domElement.width!==Math.round(w*Math.min(devicePixelRatio,1.3)))p.renderer.setSize(w,h,false);p.camera.aspect=w/h;p.camera.updateProjectionMatrix();if(p.weapon)p.weapon.rotation.y+=dt*.85;p.renderer.render(p.scene,p.camera);}app.renderer.render(app.scene,app.camera);
 }
 function clearJoy(){app.joystick.x=0;app.joystick.y=0;app.joystick.pid=null;$('joy-stick').style.transform='translate(0,0)';}
 function joystickEvent(e){const base=$('joy-base'),rect=base.getBoundingClientRect(),cx=rect.left+rect.width/2,cy=rect.top+rect.height/2;const dx=e.clientX-cx,dy=e.clientY-cy,rad=rect.width*.32,len=Math.max(1,Math.hypot(dx,dy)),scale=Math.min(1,rad/len);app.joystick.x=dx*scale/rad;app.joystick.y=dy*scale/rad;$('joy-stick').style.transform=`translate(${dx*scale}px,${dy*scale}px)`;}
