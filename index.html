@@ -1,4 +1,4 @@
-<!doctype html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no"><meta name="theme-color" content="#101d3f"><meta name="sq-build" content="SECRETARY_QUEST_3D_V5_PREMIUM_20261021"><title>Secretary Quest RPG 3D V5 — Legenda Koin</title><style>
+<!doctype html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no"><meta name="theme-color" content="#101d3f"><meta name="sq-build" content="SECRETARY_QUEST_3D_V51_WILDLIFE_20261021"><title>Secretary Quest RPG 3D V5.1 — Legenda Koin</title><style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
 :root{--navy:#101b3e;--mid:#26345d;--gold:#ffd46c;--cream:#fff0d7;--ink:#2a2547;--frame:#e2b66e;--blue:#447fd4}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;touch-action:none;background:#0e203f;color:#fff;font-family:'Nunito',system-ui,Arial,sans-serif}button,input{font:inherit}button{cursor:pointer;color:inherit;touch-action:manipulation;user-select:none;-webkit-tap-highlight-color:transparent}button:disabled{opacity:.42;cursor:default}#game,#render-canvas{width:100%;height:100%;position:absolute;inset:0;overflow:hidden}#render-canvas{display:block;touch-action:none}#vignette{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 130px rgba(7,24,56,.26)}#flash{position:absolute;inset:0;background:#fff;z-index:29;opacity:0;pointer-events:none;transition:opacity .24s}.hidden{display:none!important}.screen{position:absolute;inset:0;z-index:30}.btn-gold,.btn-outline{border-radius:13px;padding:12px 18px;font-weight:900;letter-spacing:.02em;box-shadow:0 5px 0 #543c55,0 8px 17px #0005;text-shadow:0 1px 0 #fff3;transition:transform .12s,filter .12s}.btn-gold{border:2px solid #fff3af;background:linear-gradient(180deg,#fff39a,#ffc34a 55%,#ec942c);color:#513023}.btn-outline{border:2px solid #d7b98a;background:linear-gradient(180deg,#3a4677,#202d57);color:#fff}button:hover{filter:brightness(1.12)}button:active{transform:translateY(3px);box-shadow:0 2px 0 #55425f}.hud{pointer-events:none;position:absolute;inset:15px 16px auto;z-index:12;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.hud>*{pointer-events:auto}.hud-card,.hud-region,.hud-actions button,.hud-actions .coins,.quest-strip,.nearby{border:2px solid #cbaa6d;background:linear-gradient(180deg,#2a395f,#17284b);box-shadow:0 3px 0 #463248,0 7px 15px #0005;border-radius:14px}.hud-card{display:flex;padding:8px 11px;align-items:center;min-width:220px;gap:10px}.hud-hero{width:40px;height:52px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(145deg,#8176d1,#252d71);font-size:26px}.identity-detail{flex:1}.identity-detail>div:first-child{display:flex;justify-content:space-between;align-items:center;font-size:13px}.identity-detail small{font-size:11px;color:#e3e0ff}.bar{height:13px;background:#0f1934;border:1px solid #080f23;border-radius:9px;overflow:hidden;margin-top:4px;position:relative}.bar i{display:block;height:100%;background:linear-gradient(90deg,#ff5781,#f3987e);transition:width .3s}.bar.xp i{background:linear-gradient(90deg,#30aefa,#82edfc)}.bar em{position:absolute;left:0;right:0;top:-1px;font-style:normal;text-align:center;font-size:10px;line-height:13px;text-shadow:0 1px 2px #000,0 1px 3px #000}.hud-region{padding:8px 15px;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:14px;font-weight:900}.hud-region small{font-size:11px;color:#dfceaf}.hud-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.hud-actions button,.hud-actions .coins{font-weight:900;padding:10px 11px;font-size:13px;color:white}.hud-actions button{background:linear-gradient(#5f488a,#242d56)}.hud-actions .coins{color:#fff2ab;min-width:75px;text-align:center}.quest-strip{position:absolute;bottom:29px;left:50%;transform:translateX(-50%);padding:9px 17px;z-index:13;min-width:310px;max-width:70vw;text-align:center;font-size:12px;display:flex;gap:10px;align-items:center;justify-content:center}.quest-strip b{color:#ffe4a3}.hp-segments{display:flex;gap:3px}.hp-segments i{height:9px;width:19px;border:1px solid #ffd69e;border-radius:4px;background:#72da85}.hp-segments i.empty{background:#394158}.nearby{position:absolute;top:21%;left:50%;transform:translateX(-50%);z-index:13;padding:8px 14px;font-weight:900;font-size:13px;text-align:center}.keyhint{position:absolute;left:16px;bottom:12px;font-size:11px;text-shadow:1px 2px #000;z-index:11}.screen.lobby{overflow:hidden;background:linear-gradient(90deg,#101b3ee8,#101b3e8a 50%,#101b3e15 100%)}.lobby-shade{position:absolute;inset:0;background:radial-gradient(circle at 65% 35%,transparent,#10132933 75%);pointer-events:none}.lobby-content{position:absolute;top:50%;left:6%;transform:translateY(-50%);z-index:2;width:min(48%,650px);text-align:center;filter:drop-shadow(0 9px 14px #07122bb5)}.kicker{color:#fff0c9;font-size:clamp(10px,1.13vw,15px);letter-spacing:.26em;font-weight:900}.logo-top,.logo-bottom{font-size:clamp(32px,5vw,76px);font-weight:1000;line-height:1.09;color:#ffe8a3;-webkit-text-stroke:1.2px #995734;text-shadow:0 4px 0 #603154,0 8px 8px #101424}.logo-bottom{font-size:clamp(35px,5.5vw,84px)}.logo-bottom span{color:#80e3f5;-webkit-text-stroke:1.5px #3952a7}.tagline{font-weight:900;font-size:clamp(10px,1.2vw,16px);letter-spacing:.07em;color:#fff0d7;margin:8px 0 18px}.lobby-buttons{display:flex;flex-direction:column;gap:10px;width:min(390px,85%);margin:auto}.lobby-buttons button{font-size:clamp(12px,1.2vw,16px);padding:11px 15px}.lobby-caption{font-size:clamp(9px,.9vw,12px);margin-top:18px;color:#e8def9}.narrator-lobby{position:absolute;right:3%;bottom:-15%;height:125%;width:42%;max-width:660px;z-index:1;pointer-events:none;animation:narrator-bob 6s ease-in-out infinite}.narrator-lobby img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;mask-image:linear-gradient(to bottom,#000 0%,#000 80%,transparent 98%);border-radius:48% 48% 0 0;filter:drop-shadow(-9px 0 34px #b0ceff5c)}.narrator-tag{position:absolute;bottom:20%;right:2%;background:#1e2e5deb;border:2px solid #f0d18f;border-radius:10px;color:#ffe5a3;font-size:12px;font-weight:900;padding:7px 11px}.narrator-stars{position:absolute;right:0;top:24%;font-size:33px;color:#ffe0a5;animation:star 4s infinite}.narrator-lobby.narrator-static,.portrait-live.narrator-static{animation:none!important}@keyframes narrator-bob{0%,100%{transform:translateY(0) rotate(-.4deg)}50%{transform:translateY(-9px) rotate(.35deg)}}@keyframes star{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:1;transform:scale(1.2)}}
 #creator{display:grid;place-items:center;background:linear-gradient(105deg,#0e1b35d9,#17284ad0)}.panel{background:linear-gradient(145deg,#fef4dc,#ffe5b8);border:4px solid #754d49;outline:2px solid #f5d487;border-radius:19px;color:#2d2948;box-shadow:0 13px 34px #0009}.creator-panel{width:min(1100px,95vw);height:min(690px,91vh);padding:18px 22px;display:flex;flex-direction:column}.panel-heading{display:flex;align-items:center;gap:15px;margin-bottom:12px}.panel-heading h2{font-size:clamp(22px,2.2vw,32px);margin:0;color:#252853}.panel-heading small{font-size:11px;color:#b07e4c;font-weight:900;letter-spacing:.1em}.back-small,.close-x{background:#303b69;color:white;border:2px solid #c89c59;border-radius:11px;font-weight:900;padding:6px 13px;font-size:20px}.creator-layout{min-height:0;flex:1;display:grid;grid-template-columns:50% 50%;gap:15px}.creator-preview{border-radius:15px;background:radial-gradient(ellipse at center,#8fc2bd,#395687);color:#ffedb3;position:relative;text-align:center;overflow:hidden}.creator-preview p{position:relative;z-index:1;font-weight:900;letter-spacing:.15em}.rotate-controls{position:absolute;bottom:10px;left:10px;right:10px;display:flex;justify-content:center;gap:12px;align-items:center;font-size:12px;color:#fff;text-shadow:0 1px 3px #000}.rotate-controls button{font-size:20px;background:#21315cb7;border:1px solid #ffe3a0;border-radius:10px;padding:3px 10px}.creator-options{overflow:auto;touch-action:pan-y;padding:0 15px 4px 4px}.creator-options label{font-weight:900;display:block;font-size:12px}.creator-options input{display:block;touch-action:manipulation;width:100%;border:2px solid #a58eb0;padding:9px;border-radius:9px;color:#32375a;margin-top:4px;background:#fff}.field-title{font-weight:900;font-size:13px;margin:10px 0 5px}.segmented{display:flex;background:#e0d2c8;border-radius:11px;gap:5px;padding:4px}.segmented button{flex:1;border:0;border-radius:8px;background:transparent;color:#483b50;font-weight:900;padding:7px}.segmented button.active{background:#5268b1;color:#fff}.option-grid,.swatches{display:flex;gap:7px;flex-wrap:wrap}.option-grid button{border:2px solid #c5adc1;background:#f8efe4;border-radius:9px;color:#333b62;padding:7px 11px}.option-grid button.active{border-color:#4d72cd;background:#bfcdf4}.swatches button{width:33px;height:33px;border:3px solid #f3eddd;border-radius:50%;box-shadow:0 1px 5px #0006}.swatches button.active{outline:3px solid #4d6fe0}.creator-start{width:100%;margin:16px 0 2px}.dialog-screen{background:linear-gradient(90deg,#07132fcc,#182d4a77);display:flex;align-items:center;justify-content:center}.dialog-stage{width:min(1180px,96vw);height:min(570px,88vh);display:grid;grid-template-columns:40% 60%;gap:0;border:3px solid #fae0ad;border-radius:23px;background:linear-gradient(140deg,#162950ed,#334572ea);overflow:hidden;box-shadow:0 18px 55px #000b}.narrator-dialog{position:relative;overflow:hidden;animation:narrator-bob 5s ease-in-out infinite}.narrator-dialog:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 65%,#1f3454);pointer-events:none}.narrator-dialog img{width:100%;height:110%;object-fit:cover;object-position:center top}.narrator-name{position:absolute;bottom:10px;left:16px;background:#1b2a56e8;border:2px solid #ebc37a;padding:8px 18px;border-radius:9px;color:#ffdf9c;font-weight:900;z-index:2}.dialog-content{padding:30px 35px;display:flex;flex-direction:column;justify-content:center}.dialog-counter{color:#ffd887;letter-spacing:.11em;font-weight:900;font-size:12px}.dialog-content h2{font-size:clamp(24px,3vw,37px);color:#fff2c4;line-height:1.18;margin:13px 0}.dialog-content p{font-size:clamp(14px,1.7vw,20px);line-height:1.6;white-space:pre-line;color:#f3f3ff}.dialog-controls{display:flex;gap:11px;margin-top:22px;justify-content:flex-end;flex-wrap:wrap}.modal-backdrop{display:grid;place-items:center;background:#061327b6;backdrop-filter:blur(6px)}.modal-panel{padding:18px;width:min(800px,92vw);max-height:89vh;display:flex;flex-direction:column}.modal-panel .panel-heading{justify-content:space-between;flex-shrink:0}#modal-body{overflow:auto;touch-action:pan-y;padding:4px 8px 6px}.modal-panel .panel-heading h2{font-size:24px}.card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}.shop-card{border:2px solid #cba977;border-radius:12px;background:#fff9ee;padding:12px 8px;text-align:center}.shop-card.selected{border-color:#487acc;background:#e9f4ff}.shop-card .weapon-art{height:78px;display:grid;place-items:center;font-size:53px;filter:drop-shadow(0 3px 2px #777);text-shadow:0 0 16px var(--glow,#a6ccff)}.shop-card b{font-size:12px;display:block}.shop-card small{font-size:11px;display:block;color:#6b6677;margin:4px 0}.shop-card button{padding:7px 9px;font-size:11px;background:linear-gradient(#416ba5,#2a3b76);border:1px solid #a8c2ea;border-radius:9px;color:white;font-weight:900}.panel-note{border-left:4px solid #649cd4;background:#dcebf8;border-radius:7px;padding:10px 12px;margin:12px 0;font-size:13px;line-height:1.45}.quest-row{border:1px solid #d6bc9c;border-radius:10px;background:#fff9ec;margin:7px 0;padding:10px;display:flex;justify-content:space-between;gap:10px;font-size:13px}.quest-row.done{background:#e5f9e7}.settings-row{display:flex;align-items:center;justify-content:space-between;padding:12px 6px;border-bottom:1px solid #cdbdaf;gap:15px;font-size:14px}.settings-row select,.settings-row input{touch-action:manipulation}.region-card{background:#fff7e6;border:2px solid #cfb597;padding:13px;border-radius:12px;text-align:center;display:flex;flex-direction:column;justify-content:space-between;gap:9px}.region-card button{background:#303f74;color:#fff;border:1px solid #8fa9dc;border-radius:8px;padding:7px}.region-card.locked{filter:grayscale(.6);opacity:.7}.choice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:14px}.choice-card{border:3px solid #dfc69c;background:linear-gradient(#fff8eb,#ead9bd);border-radius:14px;min-height:135px;color:#292d4b;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:7px;gap:8px;transition:transform .18s,border-color .18s}.choice-card:hover{transform:translateY(-3px);border-color:#72a0e3}.choice-card.correct{background:#d4f6dc;border-color:#23b678}.choice-card.wrong{background:#ffe0db;border-color:#e76e63}.choice-icon{font-size:clamp(30px,4vw,62px);filter:drop-shadow(0 4px 2px #4443)}.choice-label{font-size:clamp(12px,1.3vw,17px);font-weight:900;text-align:center}.battle-header{display:flex;justify-content:space-between;align-items:center;gap:9px}.battle-header span{background:#e8d4b1;padding:5px 9px;border-radius:9px;font-weight:900;font-size:12px}.battle-prompt{font-size:clamp(17px,2.2vw,25px);font-weight:900;line-height:1.4;margin:13px 0}.battle-feedback{font-size:13px;min-height:24px;color:#38639d;font-weight:900}.battle-progress{display:flex;gap:6px;margin-top:10px}.battle-progress i{height:12px;background:#f6767b;border:2px solid #823f67;flex:1;border-radius:7px}.battle-progress i.off{background:#c6b6af;opacity:.5}.victory-box{background:#243960;border:2px solid #f5d48c;color:#fff9da;text-align:center;border-radius:14px;padding:20px;font-size:20px;margin-top:12px}.win-btn{margin-top:13px;min-width:160px}.modal-footer{margin-top:12px;display:flex;justify-content:flex-end;gap:10px}.loading-orb{font-size:65px;animation:star 2s infinite}#loading{position:absolute;inset:0;z-index:100;background:radial-gradient(circle at center,#304d84,#121c3b 80%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}#loading b{font-size:18px;color:#fff0c8}.loading-track{width:min(300px,70vw);height:13px;background:#111932;border:1px solid #d3c18b;border-radius:10px;overflow:hidden}.loading-track i{display:block;width:8%;height:100%;background:linear-gradient(90deg,#ffd165,#fff1aa);transition:width .3s}#loading small{font-size:12px;color:#ddd}#fatal{position:absolute;inset:0;z-index:101;background:#16244e;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px}#fatal p{max-width:470px}#float-toast{position:absolute;z-index:42;top:24%;left:50%;transform:translateX(-50%);min-width:150px;text-align:center;font-size:17px;font-weight:900;color:#ffebaa;pointer-events:none;text-shadow:0 2px 4px #000,0 1px 2px #000;opacity:0;transition:opacity .25s}#float-toast.show{opacity:1}.mobile-controls{position:absolute;inset:auto 0 15px;z-index:16;pointer-events:none;display:flex;align-items:flex-end;justify-content:space-between;padding:0 max(25px,env(safe-area-inset-left)) 0 max(25px,env(safe-area-inset-right))}.mobile-controls>*{pointer-events:auto}#joy-base{position:relative;width:126px;height:126px;border-radius:50%;background:#d9eaff31;border:3px solid #d6e2fa87;box-shadow:inset 0 0 22px #0006;touch-action:none;user-select:none}#joy-stick{width:58px;height:58px;position:absolute;left:31px;top:31px;background:linear-gradient(#d9e7ffb8,#566dafa4);border:2px solid #f5e5bb;border-radius:50%;box-shadow:0 4px 9px #0007;pointer-events:none}.mobile-buttons{display:flex;align-items:flex-end;gap:15px}#btn-interact,#btn-attack{border-radius:50%;border:3px solid #fff1c2;background:linear-gradient(#6d89d4ed,#23477bdc);width:75px;height:75px;box-shadow:0 3px 9px #0008;display:flex;flex-direction:column;justify-content:center;align-items:center;font-size:26px;gap:0;touch-action:none}#btn-attack{height:90px;width:90px;background:linear-gradient(#f16b63,#9f3d66);font-size:33px}#btn-attack span,#btn-interact span{font-size:9px;font-weight:900}#rotate-overlay{position:absolute;inset:0;z-index:95;background:#17234df0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;gap:10px}.phone-rotate{font-size:60px}.phone-rotate span{font-size:45px}#rotate-overlay h2{margin:4px 0}#rotate-overlay p{max-width:360px;font-size:14px;line-height:1.5}#rotate-overlay button{max-width:400px;width:90%}body.reduce-motion *,body.reduce-motion *:before{animation-duration:.001ms!important;transition-duration:.001ms!important}
@@ -172,7 +172,7 @@
  <div id="loading"><div class="load-vista"></div><div class="load-rays"></div><div class="load-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="loading-inner"><div class="load-crest"><div class="crossed-blades">⚔</div></div><div class="load-kicker">THE ADVENTURE BEGINS</div><div class="load-logo">SECRETARY <span>QUEST</span></div><div class="load-subtitle">LEGENDA KOIN • FANTASY RPG 3D</div><div class="load-label" id="loading-note">Membangun dunia fantasi 3D...</div><div class="loading-track"><i id="loading-progress"></i></div><div class="load-tip">TIP: Jawaban akuntansi yang benar membuat pedangmu menyerang!</div></div></div>
 </div>
 <script type="module">
-// Secretary Quest RPG 3D V5: deployable single file, CDN fallback.
+// Secretary Quest RPG 3D V5.1: deployable single file, CDN fallback.
 let THREE;
 try { THREE=await import('https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js'); }
 catch(first) { try { THREE=await import('https://unpkg.com/three@0.160.1/build/three.module.js'); }
@@ -545,13 +545,43 @@ function createMonster(config={}){
  else if(kind==='tower'){cyl(body,base,0,1.21,0,.4,.54,1.16);ell(body,light,0,2.12,.1,.46,.46,.45);for(let s of [-1,1]){ell(body,0x263058,s*.19,2.12,.50,.10,.13,.04);cyl(body,dark,s*.34,.5,0,.2,.22,.72);ell(body,dark,s*.63,1.6,0,.19,.55,.22);}con(body,0x48537a,0,2.67,0,.6,.56);gem(body,0x75eeec,0,1.25,.53,.23);}
  else{ell(body,base,0,1.35,0,.75,.9,.68);ell(body,dark,0,2.22,.3,.53,.54,.5);for(let s of [-1,1]){con(body,0xffdfa3,s*.45,2.76,0,.22,.78);ell(body,0x3c2757,s*.2,2.27,.79,.11,.15,.04);con(body,dark,s*1.13,1.36,-.1,.35,1.22,3).rotation.z=s*.7;}}
  const ring=put(root,new THREE.RingGeometry(.86,1.12,28),new THREE.MeshBasicMaterial({color:base,transparent:true,opacity:.29,side:THREE.DoubleSide,depthWrite:false}),0,.05,0);ring.rotation.x=-Math.PI/2;
+ // Distinct monster accessories per stage, to make opponents recognizable.
+ // Game logic remains one correct answer -> one animated attack.
+ const variant=Math.max(0,level-1)%4;
+ if(kind==='village'){
+  if(variant===0){ // coins and sparkle
+   for(let i=0;i<3;i++){const m=gem(body,0xffd36a,(i-1)*.34,1.63+(i%2)*.12,.22,.13);m.rotation.z=i*.45;}
+  }else if(variant===1){ // Book Slime
+   const book=cub(body,0xffe7ba,0,1.64,.18,.75,.14,.48);book.rotation.y=.13;
+   cub(body,0x6b83c0,.12,1.72,.22,.27,.055,.31);
+  }else if(variant===2){ // calculator amulet
+   const tablet=cub(body,0x435b84,0,1.64,.26,.55,.72,.12);
+   cub(body,0xa9def0,0,1.86,.335,.38,.20,.025);
+   for(let j=0;j<6;j++)ell(body,0xffd27e,(j%3-1)*.115,1.53-Math.floor(j/3)*.14,.334,.045,.042,.013,8);
+  }else{ // winged crystal slime
+   for(let s of [-1,1]){const wing=ell(body,0x9ddfff,s*.82,1.05,.0,.33,.22,.12);wing.rotation.z=s*.4;}
+   gem(body,0x99e8ff,0,1.76,.25,.20);
+  }
+ }else if(kind==='forest'){
+  if(variant===0){con(body,0x4d9957,0,2.64,-.03,.44,.69,7);gem(body,0xf4c878,0,2.95,.0,.13);}
+  if(variant===1){for(let s of [-1,1]){con(body,0x7bb565,s*.35,2.55,0,.15,.46,7);gem(body,0xffcc74,s*.25,1.57,.50,.09);}}
+  if(variant===2){for(let s of [-1,1]){const leaf=ell(body,0x95ce6d,s*.52,1.85,-.08,.24,.42,.10);leaf.rotation.z=s*.30;}}
+  if(variant===3){gem(body,0xffdf88,0,2.53,.16,.18);cyl(body,0xa17d50,0,1.47,.54,.25,.25,.10);}
+ }else if(kind==='cave'){
+  for(let i=0;i<3+variant;i++){const a=i*2.39996;const shard=con(body,[0x76d9ff,0xa38fff,0xd4adff][i%3],Math.cos(a)*.59,2.28+(i%2)*.18,Math.sin(a)*.35,.16,.48+(i%3)*.10,5);shard.rotation.z=Math.cos(a)*.2;}
+ }else if(kind==='tower'){
+  if(variant===1||variant===3){cub(body,0xf6edc8,.0,1.4,.59,.58,.68,.08);cub(body,0x497ba1,-.1,1.58,.65,.33,.05,.015);}
+  else for(let s of [-1,1])gem(body,0xa4f2ff,s*.54,2.21,.06,.19);
+ }else if(kind==='castle'){
+  for(let i=0;i<variant+1;i++){const a=(i-(variant/2))*.28;gem(body,0xffb9c8,a,2.78,.13,.14);}
+ }
  const state={root,body,kind,level,ring,dead:false,hurt:0};root.userData.monster=state;return state;
 }
 function animateMonster(m,time,dt){if(!m||m.dead)return;m.hurt=Math.max(0,m.hurt-dt);m.body.position.y=Math.sin(time*2.5+m.level)*.09+(m.hurt?Math.sin(time*44)*.06:0);m.body.rotation.y=Math.sin(time*1.1+m.level)*.14;m.body.scale.set(m.hurt?1.14:1,m.hurt?.84:1,m.hurt?1.07:1);m.ring.rotation.z+=dt*.65;}
 
 return {createHero,createMonster,animateHero,animateMonster,appearanceOptions,createSword};
 })();
-const {createWorld}=(()=>{
+const {createWorld,animateWildlife}=(()=>{
 const M=(c,roughness=.78,emissive=0)=>new THREE.MeshStandardMaterial({color:c,roughness,metalness:.04,flatShading:true,emissive,emissiveIntensity:emissive?.17:0});
 
 // Hand-generated watercolor-like albedo maps retain 3D meshes but replace featureless solid-color floors.
@@ -643,7 +673,92 @@ function marketStall(p,x,z,tint=0xc96a62,title='PASAR'){const g=new THREE.Group(
 function wishingWell(p,x,z){cyl(p,1.38,1.5,.9,0x979e9c,x,.46,z,12);cyl(p,1.06,1.08,.15,0x5ab6d8,x,.82,z,12);for(let a of [-1,1])cyl(p,.13,.15,3,0x7e553f,x+a*1.1,2.25,z,7);const roof=cone(p,1.75,1.1,0x4a75ad,x,3.67,z,4);roof.rotation.y=Math.PI/4;}
 function villageStatue(p,x,z){cyl(p,1.28,1.45,.6,0xccc9bc,x,.29,z,12);cyl(p,.75,.9,2.1,0xede1ba,x,1.5,z,10);ball(p,.68,0xffe1a1,x,3.23,z,2);const crown=cone(p,.78,1.0,0xe2b66e,x,4.11,z,8);crown.rotation.y=.3;for(let t of [-1,1])ball(p,.18,0x8cd3f7,x+t*.32,3.24,z+.55,1);}
 
-function createWorld(region='village',guildLevel=1){const root=new THREE.Group(),interactables=[],colliders=[],animated=[];let seed={'village':11,'forest':45,'cave':94,'tower':138,'castle':277}[region]||11;const rand=randGen(seed);let terrain={village:0x7ca76c,forest:0x5c9669,cave:0x515b76,tower:0x808f9b,castle:0x667786}[region];ground(root,terrain,64,region);
+
+// V5.1: small three-dimensional creatures, not billboard images or enemy targets.
+// Each creature keeps its home position (animal idle only) to prevent gameplay clutter.
+function animalMesh(parent,shape,color,x,y,z,sx,sy,sz,detail=1){
+ const g=shape==='ellipsoid'?new THREE.IcosahedronGeometry(1,detail):new THREE.SphereGeometry(1,14,10);
+ const m=add(parent,g,color,x,y,z);m.scale.set(sx,sy,sz);return m;
+}
+function creature(kind,x,z,scale=.95,variation=0){
+ const root=new THREE.Group();root.position.set(x,0,z);root.scale.setScalar(scale);
+ const torso=new THREE.Group();root.add(torso);
+ const fur={cat:0xe9a65d,rabbit:0xe8ddd1,chicken:0xf8ebd6,dog:0xb27d55,bird:0x6fbbca,fox:0xc97a49,duck:0xffe9a0}[kind]||0xe2c4a2;
+ const pale=kind==='cat'?0xffe1bf:kind==='rabbit'?0xfffaf5:kind==='dog'?0xebc29c:0xfff4d6;
+ const dark=0x2a3445;
+ let tail=null,head=null,wings=[];
+ const mammal=['cat','rabbit','dog','fox'].includes(kind);
+ if(mammal){
+  animalMesh(torso,'ellipsoid',fur,0,.38,0,.40,.33,.56,2);
+  animalMesh(torso,'ellipsoid',pale,0,.29,.42,.25,.22,.17,1);
+  head=new THREE.Group();head.position.set(0,.65,.39);torso.add(head);
+  animalMesh(head,'ellipsoid',fur,0,0,0,.36,.34,.31,2);
+  animalMesh(head,'ellipsoid',pale,0,-.16,.23,.24,.16,.12,1);
+  for(const side of [-1,1]){
+   animalMesh(head,'ellipsoid',dark,side*.16,.04,.278,.048,.068,.025,1);
+   animalMesh(head,'ellipsoid',0xffffff,side*.145,.072,.302,.018,.021,.01,1);
+   const ear=animalMesh(head,'ellipsoid',fur,side*.25,.38,-.08,kind==='rabbit'?.14:.17,kind==='rabbit'?.38:.23,.12,1);ear.rotation.z=side*(kind==='rabbit'?.11:.26);
+   if(kind==='rabbit'){const inner=animalMesh(head,'ellipsoid',0xe9a8b1,side*.25,.4,.032,.067,.31,.025,1);inner.rotation.z=side*.11;}
+   animalMesh(torso,'ellipsoid',fur,side*.25,.13,.35,.15,.19,.17,1);
+   animalMesh(torso,'ellipsoid',fur,side*.27,.17,-.36,.15,.20,.16,1);
+  }
+  animalMesh(head,'ellipsoid',0xe08e96,0,-.125,.332,.061,.041,.034,1);
+  if(kind==='cat'||kind==='fox'){
+   for(const side of [-1,1])for(let k=0;k<2;k++){
+    const whisker=cyl(head,.007,.007,.28,0xf6e7cc,side*.17,-.16+k*.05,.37,6);
+    whisker.rotation.z=side*(.45-k*.28);
+   }
+  }
+  tail=new THREE.Group();tail.position.set(0,.40,-.49);torso.add(tail);
+  const curl=animalMesh(tail,'ellipsoid',fur,0,.22,-.09,.12,.36,.15,1);curl.rotation.x=-.45;
+  if(kind==='fox'){animalMesh(tail,'ellipsoid',0xfff2db,0,.47,-.18,.13,.15,.13,1);}
+  if(kind==='dog'){for(let s of [-1,1]){const ear=head.children.find(v=>v.position.x*s>.2&&v.position.y>.25);if(ear)ear.rotation.z=s*.62;}}
+ }else{
+  animalMesh(torso,'ellipsoid',fur,0,.44,0,.33,.40,.39,2);
+  animalMesh(torso,'ellipsoid',pale,0,.28,.24,.21,.22,.16,1);
+  head=new THREE.Group();head.position.set(0,.72,.23);torso.add(head);
+  animalMesh(head,'ellipsoid',fur,0,0,0,.27,.28,.28,1);
+  for(const s of [-1,1]){
+    animalMesh(head,'ellipsoid',dark,s*.12,.03,.243,.037,.055,.029,1);
+    animalMesh(head,'ellipsoid',0xffffff,s*.104,.055,.26,.014,.017,.010,1);
+    const wing=animalMesh(torso,'ellipsoid',kind==='bird'?0x428a9e:0xe8d8ae,s*.31,.42,0,.16,.23,.23,1);wing.rotation.z=s*.18;wings.push(wing);
+    const foot=cyl(torso,.031,.045,.18,0xe3a45f,s*.14,.10,.22,8);
+  }
+  const beak=cone(head,.12,.24,0xf2b35e,0,-.12,.33,5);beak.rotation.x=Math.PI/2;
+  if(kind==='chicken'){for(let i=-1;i<=1;i++)animalMesh(head,'ellipsoid',0xd85e55,i*.085,.29,.0,.09,.14,.09,1);}
+  if(kind==='bird'){tail=animalMesh(torso,'ellipsoid',0x4e98ac,0,.53,-.39,.14,.13,.32,1);tail.rotation.x=.2;}
+  if(kind==='duck'){animalMesh(head,'ellipsoid',0xffe29a,0,-.08,.25,.16,.055,.10,1);}
+ }
+ // deterministic idle from seed. World-space position is never modified.
+ root.rotation.y=(variation%7)*.62;
+ return {kind,root,torso,head,tail,wings,homeX:x,homeZ:z,phase:variation*1.37,scale};
+}
+function animateWildlife(world,time,dt){
+ if(!world?.wildlife)return;
+ for(const a of world.wildlife){
+  const t=time+a.phase;
+  a.root.position.x=a.homeX;a.root.position.z=a.homeZ;
+  a.torso.position.y=Math.sin(t*1.65)*.024;
+  a.torso.rotation.z=Math.sin(t*.82)*.016;
+  if(a.head)a.head.rotation.y=Math.sin(t*.54)*.18;
+  if(a.tail)a.tail.rotation.z=Math.sin(t*2.2)*.25;
+  if(a.wings?.length)for(let i=0;i<a.wings.length;i++)a.wings[i].rotation.z=(i?1:-1)*(.10+.15*Math.sin(t*3));
+ }
+}
+function addAnimals(root,wildlife,region,compact=false){
+ const inVillage=[
+  ['cat',-6,9.4,.83],['rabbit',-2,12,.78],['chicken',15,9.1,.88],
+  ['dog',8,19.4,1],['bird',-8,14.1,.72],['fox',-15.4,18.5,.82],
+  ['duck',-17.5,3.5,.86],['cat',16.2,-1.5,.86],['chicken',-6.4,3.5,.7],
+  ['rabbit',21.5,0,.73],['bird',3.5,11.4,.65],['dog',-2.8,21.5,.89]
+ ];
+ const inForest=[['rabbit',-9,4.3,.85],['fox',12,4.9,.9],['bird',-5,-8,.7],['rabbit',13,14,.82]];
+ const items=region==='village'?inVillage:region==='forest'?inForest:[];
+ const chosen=compact?items.filter((_,i)=>i%2===0):items;
+ chosen.forEach(([kind,x,z,scale],i)=>{const a=creature(kind,x,z,scale,i+1);root.add(a.root);wildlife.push(a);});
+}
+
+function createWorld(region='village',guildLevel=1,compact=false){const root=new THREE.Group(),interactables=[],colliders=[],animated=[],wildlife=[];let seed={'village':11,'forest':45,'cave':94,'tower':138,'castle':277}[region]||11;const rand=randGen(seed);let terrain={village:0x7ca76c,forest:0x5c9669,cave:0x515b76,tower:0x808f9b,castle:0x667786}[region];ground(root,terrain,64,region);
  const tileColor={village:0xd5bd9d,forest:0xb5a789,cave:0x777c90,tower:0xb7b6b2,castle:0xaba9ad}[region];
  const pathPositions=[];for(let x=-29;x<=29;x+=2)for(let z=-29;z<=29;z+=2){let path=region==='village'?(Math.abs(x)<4||Math.abs(z-4)<4||Math.abs(z+16)<2||Math.abs(x+12)<3):region==='forest'?(Math.abs(x-Math.sin(z*.15)*3)<4):region==='cave'?(Math.abs(x)<5||Math.abs(z-8)<4):region==='tower'?(Math.abs(x)<5||Math.abs(z)<5):Math.abs(x)<8||Math.abs(z-10)<3;
  if(path){pathPositions.push([x,0,z]);if(rand()<.08){box(root,.33,.02,.27,0xece0c5,x+.4,.065,z+.36);}}}
@@ -687,12 +802,13 @@ function createWorld(region='village',guildLevel=1){const root=new THREE.Group()
  } else if(rand()<.4)tree(root,x,z,.55+rand()*.68,region);else if(rand()<.5)flowers(root,x,z,1,i);else stone(root,x,z,.46+rand()*.35);
  }
  for(let i=0;i<30;i++){let x=rand()*55-27,z=rand()*55-27;const grass=cyl(root,.025,.0,.22,region==='cave'?0x83b1b6:0x87ce81,x,.16,z,3);grass.rotation.z=rand()*.4;}
+ addAnimals(root,wildlife,region,compact);
  if(region==='village')for(const [x,z] of [[-6,-5],[5,-4],[-6,8],[7,7],[-15,1],[14,1]])streetlamp(root,x,z);
  const monsterSpot=region==='village'?{x:10,z:6}:region==='forest'?{x:8,z:6}:region==='cave'?{x:5,z:7}:region==='tower'?{x:6,z:9}:{x:6,z:8};
- const spawn={x:0,z:region==='village'?9:15};return {root,interactables,colliders,monsterSpot,spawn,animated};
+ const spawn={x:0,z:region==='village'?9:15};return {root,interactables,colliders,monsterSpot,spawn,animated,wildlife};
 }
 
-return {createWorld};
+return {createWorld,animateWildlife};
 })();
 const $=id=>document.getElementById(id), fmt=n=>Number(n||0).toLocaleString('id-ID'), R=(a,b)=>Math.max(a,Math.min(b,Number.isFinite(Number(b))?Number(b):a));
 const app={save:loadGame()||newSave(),renderer:null,scene:null,world:null,hero:null,monster:null,previewScene:null,previewHero:null,camera:null,previewCamera:null,phase:'lobby',playing:false, keys:{},joystick:{x:0,y:0,pid:null},clock:new THREE.Clock(),time:0,moving:false,near:null,attack:null,combatLevel:null,question:null,answered:false,opening:false,currentPanel:null,toastTimer:null,dialogNext:null,tutorial:false,tutPhase:0,tutWalk:0,training:false,camFocus:new THREE.Vector3(),fx:[],ambientParticles:[],lastType:-1,lastTarget:null, lastTap:0,npcs:[],velocity:new THREE.Vector3(),qualityDpr:1,shopPreview:null,allowPortrait:false};
@@ -746,13 +862,18 @@ function npcName(root,name){const cv=document.createElement('canvas');cv.width=5
 function clearVillagers(){for(const npc of app.npcs){removeRoot(npc.hero.root);}app.npcs=[];}
 function createVillagers(region){clearVillagers();const data=region==='village'?villagePeople:[{name:'Penjelajah Guild',x:-4,z:9,clothes:1,hair:0,gender:'female',hint:'Jawaban benar membuat pedang menyerang dan kamu mendapatkan koin!',seed:3},{name:'Ksatria Neraca',x:14,z:9,clothes:0,hair:3,gender:'male',hint:'Teruslah belajar untuk mencapai kastil terakhir.',seed:5}];
  for(const npc of ((isMobile() && region==='village') ? data.filter((_,i)=>i%3===0) : data)){const hero=createHero({gender:npc.gender,hair:npc.hair,outfit:npc.clothes,skin:0xe9b58c,hairColor:[0x795037,0x292638,0xa36448][npc.seed%3]});hero.root.position.set(npc.x,0,npc.z);hero.root.scale.setScalar(.79);if(npc.seed%3)hero.equip('basic');hero.root.rotation.y=Math.PI*.24;npcName(hero.root,npc.name.split(' · ')[0]);app.scene.add(hero.root);const state={...npc,hero,homeX:npc.x,homeZ:npc.z,phase:npc.seed*.87,speed:.33+npc.seed%3*.13};app.npcs.push(state);app.world.interactables.push({type:'npc',x:npc.x,z:npc.z,npc:state,label:npc.name});}}
-function updateVillagers(time,dt){for(const npc of app.npcs){const h=npc.hero,amp=npc.seed%2?1.1:.63;
- const tx=npc.homeX+Math.sin(time*npc.speed+npc.phase)*amp, tz=npc.homeZ+Math.cos(time*npc.speed*.83+npc.phase)*amp;
- const dx=tx-h.root.position.x,dz=tz-h.root.position.z;const d=Math.hypot(dx,dz);
- if(d>.045){const max=Math.min(d,dt*1.0);h.root.position.x+=dx/d*max;h.root.position.z+=dz/d*max;const aim=Math.atan2(dx,dz);h.root.rotation.y+=Math.atan2(Math.sin(aim-h.root.rotation.y),Math.cos(aim-h.root.rotation.y))*Math.min(1,dt*5);}
- animateHero(h,time+npc.phase,dt,d>.10);
- const t=app.world.interactables.find(v=>v.npc===npc);if(t){t.x=h.root.position.x;t.z=h.root.position.z;}
-}}
+function updateVillagers(time,dt){
+ // Warga tidak lagi berjalan-jalan: setiap NPC tetap di posisi kerjanya,
+ // namun kepala, kain dan tangan memiliki animasi idle halus.
+ for(const npc of app.npcs){
+  const h=npc.hero;
+  h.root.position.set(npc.homeX,0,npc.homeZ);
+  animateHero(h,time+npc.phase,dt,false);
+  h.body.rotation.y=.075*Math.sin(time*.42+npc.phase);
+  h.left.rotation.z=.075*Math.sin(time*.71+npc.phase);
+  h.hairObj.rotation.z+=.007*Math.sin(time*.8+npc.phase);
+ }
+}
 function removeRoot(root){if(root&&root.parent)root.parent.remove(root);}
 function createAmbientWorld(region){
  app.ambientParticles=[];
@@ -772,7 +893,7 @@ function animateAmbientWorld(t){for(const p of app.ambientParticles){
  p.orb.position.set(p.x+Math.sin(t*p.speed+p.phase)*.7,p.y+Math.sin(t*1.2+p.phase)*.29,p.z+Math.cos(t*p.speed*.7+p.phase)*.55);
  p.orb.material.opacity=.22+.33*(.5+.5*Math.sin(t*2.1+p.phase));
 }}
-function buildWorld(region='village',keepPos=false){let old=app.hero?.root.position.clone()||new THREE.Vector3(0,0,12);removeRoot(app.world?.root);removeRoot(app.hero?.root);removeRoot(app.monster?.root);removeRoot(app.mentor?.root);clearVillagers();app.world=createWorld(region,app.save.guild);app.scene.add(app.world.root);createAmbientWorld(region);let [sky,fog]=regionColors(region);app.scene.background=new THREE.Color(sky);app.scene.fog.color.setHex(fog);
+function buildWorld(region='village',keepPos=false){let old=app.hero?.root.position.clone()||new THREE.Vector3(0,0,12);removeRoot(app.world?.root);removeRoot(app.hero?.root);removeRoot(app.monster?.root);removeRoot(app.mentor?.root);clearVillagers();app.world=createWorld(region,app.save.guild,isMobile());app.scene.add(app.world.root);createAmbientWorld(region);let [sky,fog]=regionColors(region);app.scene.background=new THREE.Color(sky);app.scene.fog.color.setHex(fog);
  app.hero=createHero(app.save.appearance);app.hero.root.position.set(keepPos?old.x:app.world.spawn.x,0,keepPos?old.z:app.world.spawn.z);app.scene.add(app.hero.root);app.hero.equip(app.save.equipped);
  if(region==='village'){app.mentor=createHero({gender:'female',hair:2,hairColor:0x76462f,skin:0xe9ad87,outfit:1});app.mentor.root.position.set(3,0,11);app.mentor.root.rotation.y=-.6;app.mentor.root.scale.setScalar(.88);app.scene.add(app.mentor.root);app.world.interactables.push({type:'mentor',x:3,z:11,label:'Pemandu Desa'});}else app.mentor=null;
  createVillagers(region);spawnMonster();updateHud();}
@@ -937,7 +1058,7 @@ function animate(){requestAnimationFrame(animate);if(!app.renderer)return;let dt
   if(app.attack)updateAttack(dt);
   animateHero(app.hero,t,dt,app.moving&&app.phase==='play',app.attack?{kind:app.attack.kind,t:app.attack.t}:null);
   if(app.attack)swordTrail();if(app.monster){animateMonster(app.monster,t,dt);}
-  if(app.mentor)animateHero(app.mentor,t,dt,false);if(app.npcs.length)updateVillagers(t,dt);
+  if(app.mentor)animateHero(app.mentor,t,dt,false);if(app.npcs.length)updateVillagers(t,dt);if(app.world)animateWildlife(app.world,t,dt);
   let p=app.hero.root.position;let target=new THREE.Vector3(p.x+17,p.y+22,p.z+22);app.camera.position.lerp(target,1-Math.exp(-dt*2.9));app.camFocus.lerp(new THREE.Vector3(p.x,p.y+1,p.z),1-Math.exp(-dt*4));if(app.attack&&!app.save.settings.reducedMotion){let shake=Math.max(0,1-Math.abs(app.attack.t-.62)*7)*.13;app.camera.position.x+=(Math.random()-.5)*shake;app.camera.position.y+=(Math.random()-.5)*shake;}app.camera.lookAt(app.camFocus);
   if(app.phase==='lobby'){let goal=new THREE.Vector3(20+Math.sin(t*.2)*2,27,30);app.camera.position.lerp(goal,dt);app.camera.lookAt(0,0,0);}
   if(app.phase==='play'){let near=closest();app.near=near;if(near){$('nearby').textContent=(isMobile()?'AKSI':'E')+' · '+near.label;show('nearby');}else hide('nearby');}else hide('nearby');
